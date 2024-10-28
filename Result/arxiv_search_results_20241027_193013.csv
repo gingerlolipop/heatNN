@@ -1,0 +1,2177 @@
+Title,Author,Author Affiliation,Source,Publication Year,Volume and Issue,Pages,Issue Date,Monograph Title,Database,Summary,Published Date,Link
+"Sub-seasonal forecasting with a large ensemble of deep-learning weather
+  prediction models","Jonathan A. Weyn, Dale R. Durran, Rich Caruana, Nathaniel Cresswell-Clay",N/A,ArXiv,2021,N/A,N/A,2021-02-09T20:14:43Z,N/A,ArXiv,"  We present an ensemble prediction system using a Deep Learning Weather
+Prediction (DLWP) model that recursively predicts key atmospheric variables
+with six-hour time resolution. This model uses convolutional neural networks
+(CNNs) on a cubed sphere grid to produce global forecasts. The approach is
+computationally efficient, requiring just three minutes on a single GPU to
+produce a 320-member set of six-week forecasts at 1.4{\deg} resolution.
+Ensemble spread is primarily produced by randomizing the CNN training process
+to create a set of 32 DLWP models with slightly different learned weights.
+Although our DLWP model does not forecast precipitation, it does forecast total
+column water vapor, and it gives a reasonable 4.5-day deterministic forecast of
+Hurricane Irma. In addition to simulating mid-latitude weather systems, it
+spontaneously generates tropical cyclones in a one-year free-running
+simulation. Averaged globally and over a two-year test set, the ensemble mean
+RMSE retains skill relative to climatology beyond two-weeks, with anomaly
+correlation coefficients remaining above 0.6 through six days. Our primary
+application is to subseasonal-to-seasonal (S2S) forecasting at lead times from
+two to six weeks. Current forecast systems have low skill in predicting one- or
+2-week-average weather patterns at S2S time scales. The continuous ranked
+probability score (CRPS) and the ranked probability skill score (RPSS) show
+that the DLWP ensemble is only modestly inferior in performance to the European
+Centre for Medium Range Weather Forecasts (ECMWF) S2S ensemble over land at
+lead times of 4 and 5-6 weeks. At shorter lead times, the ECMWF ensemble
+performs better than DLWP.
+",2021-02-09T20:14:43Z,http://arxiv.org/abs/2102.05107v1
+"DUNE: A Machine Learning Deep UNet++ based Ensemble Approach to Monthly,
+  Seasonal and Annual Climate Forecasting","Pratik Shukla, Milton Halem",N/A,ArXiv,2024,N/A,N/A,2024-08-12T16:22:30Z,N/A,ArXiv,"  Capitalizing on the recent availability of ERA5 monthly averaged long-term
+data records of mean atmospheric and climate fields based on high-resolution
+reanalysis, deep-learning architectures offer an alternative to physics-based
+daily numerical weather predictions for subseasonal to seasonal (S2S) and
+annual means. A novel Deep UNet++-based Ensemble (DUNE) neural architecture is
+introduced, employing multi-encoder-decoder structures with residual blocks.
+When initialized from a prior month or year, this architecture produced the
+first AI-based global monthly, seasonal, or annual mean forecast of 2-meter
+temperatures (T2m) and sea surface temperatures (SST). ERA5 monthly mean data
+is used as input for T2m over land, SST over oceans, and solar radiation at the
+top of the atmosphere for each month of 40 years to train the model. Validation
+forecasts are performed for an additional two years, followed by five years of
+forecast evaluations to account for natural annual variability. AI-trained
+inference forecast weights generate forecasts in seconds, enabling ensemble
+seasonal forecasts. Root Mean Squared Error (RMSE), Anomaly Correlation
+Coefficient (ACC), and Heidke Skill Score (HSS) statistics are presented
+globally and over specific regions. These forecasts outperform persistence,
+climatology, and multiple linear regression for all domains. DUNE forecasts
+demonstrate comparable statistical accuracy to NOAA's operational monthly and
+seasonal probabilistic outlook forecasts over the US but at significantly
+higher resolutions. RMSE and ACC error statistics for other recent AI-based
+daily forecasts also show superior performance for DUNE-based forecasts. The
+DUNE model's application to an ensemble data assimilation cycle shows
+comparable forecast accuracy with a single high-resolution model, potentially
+eliminating the need for retraining on extrapolated datasets.
+",2024-08-12T16:22:30Z,http://arxiv.org/abs/2408.06262v1
+"Learning and Dynamical Models for Sub-seasonal Climate Forecasting:
+  Comparison and Collaboration","Sijie He, Xinyan Li, Laurie Trenary, Benjamin A Cash, Timothy DelSole, Arindam Banerjee",N/A,ArXiv,2021,N/A,N/A,2021-09-29T06:34:34Z,N/A,ArXiv,"  Sub-seasonal climate forecasting (SSF) is the prediction of key climate
+variables such as temperature and precipitation on the 2-week to 2-month time
+horizon. Skillful SSF would have substantial societal value in areas such as
+agricultural productivity, hydrology and water resource management, and
+emergency planning for extreme events such as droughts and wildfires. Despite
+its societal importance, SSF has stayed a challenging problem compared to both
+short-term weather forecasting and long-term seasonal forecasting. Recent
+studies have shown the potential of machine learning (ML) models to advance
+SSF. In this paper, for the first time, we perform a fine-grained comparison of
+a suite of modern ML models with start-of-the-art physics-based dynamical
+models from the Subseasonal Experiment (SubX) project for SSF in the western
+contiguous United States. Additionally, we explore mechanisms to enhance the ML
+models by using forecasts from dynamical models. Empirical results illustrate
+that, on average, ML models outperform dynamical models while the ML models
+tend to be conservatives in their forecasts compared to the SubX models.
+Further, we illustrate that ML models make forecasting errors under extreme
+weather conditions, e.g., cold waves due to the polar vortex, highlighting the
+need for separate models for extreme events. Finally, we show that suitably
+incorporating dynamical model forecasts as inputs to ML models can
+substantially improve the forecasting performance of the ML models. The SSF
+dataset constructed for the work, dynamical model predictions, and code for the
+ML models are released along with the paper for the benefit of the broader
+machine learning community.
+",2021-09-29T06:34:34Z,http://arxiv.org/abs/2110.05196v1
+"FourCastNet: A Global Data-driven High-resolution Weather Model using
+  Adaptive Fourier Neural Operators","Jaideep Pathak, Shashank Subramanian, Peter Harrington, Sanjeev Raja, Ashesh Chattopadhyay, Morteza Mardani, Thorsten Kurth, David Hall, Zongyi Li, Kamyar Azizzadenesheli, Pedram Hassanzadeh, Karthik Kashinath, Animashree Anandkumar",N/A,ArXiv,2022,N/A,N/A,2022-02-22T22:19:35Z,N/A,ArXiv,"  FourCastNet, short for Fourier Forecasting Neural Network, is a global
+data-driven weather forecasting model that provides accurate short to
+medium-range global predictions at $0.25^{\circ}$ resolution. FourCastNet
+accurately forecasts high-resolution, fast-timescale variables such as the
+surface wind speed, precipitation, and atmospheric water vapor. It has
+important implications for planning wind energy resources, predicting extreme
+weather events such as tropical cyclones, extra-tropical cyclones, and
+atmospheric rivers. FourCastNet matches the forecasting accuracy of the ECMWF
+Integrated Forecasting System (IFS), a state-of-the-art Numerical Weather
+Prediction (NWP) model, at short lead times for large-scale variables, while
+outperforming IFS for variables with complex fine-scale structure, including
+precipitation. FourCastNet generates a week-long forecast in less than 2
+seconds, orders of magnitude faster than IFS. The speed of FourCastNet enables
+the creation of rapid and inexpensive large-ensemble forecasts with thousands
+of ensemble-members for improving probabilistic forecasting. We discuss how
+data-driven deep learning models such as FourCastNet are a valuable addition to
+the meteorology toolkit to aid and augment NWP models.
+",2022-02-22T22:19:35Z,http://arxiv.org/abs/2202.11214v1
+"FengWu-GHR: Learning the Kilometer-scale Medium-range Global Weather
+  Forecasting","Tao Han, Song Guo, Fenghua Ling, Kang Chen, Junchao Gong, Jingjia Luo, Junxia Gu, Kan Dai, Wanli Ouyang, Lei Bai",N/A,ArXiv,2024,N/A,N/A,2024-01-28T13:23:25Z,N/A,ArXiv,"  Kilometer-scale modeling of global atmosphere dynamics enables fine-grained
+weather forecasting and decreases the risk of disastrous weather and climate
+activity. Therefore, building a kilometer-scale global forecast model is a
+persistent pursuit in the meteorology domain. Active international efforts have
+been made in past decades to improve the spatial resolution of numerical
+weather models. Nonetheless, developing the higher resolution numerical model
+remains a long-standing challenge due to the substantial consumption of
+computational resources. Recent advances in data-driven global weather
+forecasting models utilize reanalysis data for model training and have
+demonstrated comparable or even higher forecasting skills than numerical
+models. However, they are all limited by the resolution of reanalysis data and
+incapable of generating higher-resolution forecasts. This work presents
+FengWu-GHR, the first data-driven global weather forecasting model running at
+the 0.09$^{\circ}$ horizontal resolution. FengWu-GHR introduces a novel
+approach that opens the door for operating ML-based high-resolution forecasts
+by inheriting prior knowledge from a pretrained low-resolution model. The
+hindcast of weather prediction in 2022 indicates that FengWu-GHR is superior to
+the IFS-HRES. Furthermore, evaluations on station observations and case studies
+of extreme events support the competitive operational forecasting skill of
+FengWu-GHR at the high resolution.
+",2024-01-28T13:23:25Z,http://arxiv.org/abs/2402.00059v1
+"Pangu-Weather: A 3D High-Resolution Model for Fast and Accurate Global
+  Weather Forecast","Kaifeng Bi, Lingxi Xie, Hengheng Zhang, Xin Chen, Xiaotao Gu, Qi Tian",N/A,ArXiv,2022,N/A,N/A,2022-11-03T17:19:43Z,N/A,ArXiv,"  In this paper, we present Pangu-Weather, a deep learning based system for
+fast and accurate global weather forecast. For this purpose, we establish a
+data-driven environment by downloading $43$ years of hourly global weather data
+from the 5th generation of ECMWF reanalysis (ERA5) data and train a few deep
+neural networks with about $256$ million parameters in total. The spatial
+resolution of forecast is $0.25^\circ\times0.25^\circ$, comparable to the ECMWF
+Integrated Forecast Systems (IFS). More importantly, for the first time, an
+AI-based method outperforms state-of-the-art numerical weather prediction (NWP)
+methods in terms of accuracy (latitude-weighted RMSE and ACC) of all factors
+(e.g., geopotential, specific humidity, wind speed, temperature, etc.) and in
+all time ranges (from one hour to one week). There are two key strategies to
+improve the prediction accuracy: (i) designing a 3D Earth Specific Transformer
+(3DEST) architecture that formulates the height (pressure level) information
+into cubic data, and (ii) applying a hierarchical temporal aggregation
+algorithm to alleviate cumulative forecast errors. In deterministic forecast,
+Pangu-Weather shows great advantages for short to medium-range forecast (i.e.,
+forecast time ranges from one hour to one week). Pangu-Weather supports a wide
+range of downstream forecast scenarios, including extreme weather forecast
+(e.g., tropical cyclone tracking) and large-member ensemble forecast in
+real-time. Pangu-Weather not only ends the debate on whether AI-based methods
+can surpass conventional NWP methods, but also reveals novel directions for
+improving deep learning weather forecast systems.
+",2022-11-03T17:19:43Z,http://arxiv.org/abs/2211.02556v1
+"Lightning-Fast Convective Outlooks: Predicting Severe Convective
+  Environments with Global AI-based Weather Models","Monika Feldmann, Tom Beucler, Milton Gomez, Olivia Martius",N/A,ArXiv,2024,N/A,N/A,2024-06-13T07:46:03Z,N/A,ArXiv,"  Severe convective storms are among the most dangerous weather phenomena and
+accurate forecasts mitigate their impacts. The recently released suite of
+AI-based weather models produces medium-range forecasts within seconds, with a
+skill similar to state-of-the-art operational forecasts for variables on single
+levels. However, predicting severe thunderstorm environments requires accurate
+combinations of dynamic and thermodynamic variables and the vertical structure
+of the atmosphere. Advancing the assessment of AI-models towards process-based
+evaluations lays the foundation for hazard-driven applications. We assess the
+forecast skill of three top-performing AI-models for convective parameters at
+lead-times of up to 10 days against reanalysis and ECMWF's operational
+numerical weather prediction model IFS. In a case study and seasonal analyses,
+we see the best performance by GraphCast and Pangu-Weather: these models match
+or even exceed the performance of IFS for instability and shear. This opens
+opportunities for fast and inexpensive predictions of severe weather
+environments.
+",2024-06-13T07:46:03Z,http://arxiv.org/abs/2406.09474v2
+Global Extreme Heat Forecasting Using Neural Weather Models,"Ignacio Lopez-Gomez, Amy McGovern, Shreya Agrawal, Jason Hickey",N/A,ArXiv,2022,N/A,N/A,2022-05-23T00:35:23Z,N/A,ArXiv,"  Heat waves are projected to increase in frequency and severity with global
+warming. Improved warning systems would help reduce the associated loss of
+lives, wildfires, power disruptions, and reduction in crop yields. In this
+work, we explore the potential for deep learning systems trained on historical
+data to forecast extreme heat on short, medium and subseasonal timescales. To
+this purpose, we train a set of neural weather models (NWMs) with convolutional
+architectures to forecast surface temperature anomalies globally, 1 to 28 days
+ahead, at $\sim200~\mathrm{km}$ resolution and on the cubed sphere. The NWMs
+are trained using the ERA5 reanalysis product and a set of candidate loss
+functions, including the mean squared error and exponential losses targeting
+extremes. We find that training models to minimize custom losses tailored to
+emphasize extremes leads to significant skill improvements in the heat wave
+prediction task, compared to NWMs trained on the mean squared error loss. This
+improvement is accomplished with almost no skill reduction in the general
+temperature prediction task, and it can be efficiently realized through
+transfer learning, by re-training NWMs with the custom losses for a few epochs.
+In addition, we find that the use of a symmetric exponential loss reduces the
+smoothing of NWM forecasts with lead time. Our best NWM is able to outperform
+persistence in a regressive sense for all lead times and temperature anomaly
+thresholds considered, and shows positive regressive skill compared to the
+ECMWF subseasonal-to-seasonal control forecast after two weeks.
+",2022-05-23T00:35:23Z,http://arxiv.org/abs/2205.10972v2
+"Leveraging data-driven weather models for improving numerical weather
+  prediction skill through large-scale spectral nudging","Syed Zahid Husain, Leo Separovic, Jean-François Caron, Rabah Aider, Mark Buehner, Stéphane Chamberland, Ervig Lapalme, Ron McTaggart-Cowan, Christopher Subich, Paul A. Vaillancourt, Jing Yang, Ayrton Zadra",N/A,ArXiv,2024,N/A,N/A,2024-07-08T16:39:25Z,N/A,ArXiv,"  Operational meteorological forecasting has long relied on physics-based
+numerical weather prediction (NWP) models. Recently, this landscape is facing
+disruption by the advent of data-driven artificial intelligence (AI)-based
+weather models, which offer tremendous computational performance and
+competitive forecasting skill. However, data-driven models for medium-range
+forecasting generally suffer from major limitations, including low effective
+resolution and a narrow range of predicted variables. This study illustrates
+the relative strengths and weaknesses of these competing paradigms using the
+GEM (Global Environmental Multiscale) and GraphCast models to represent
+physics-based and AI-based approaches, respectively. By analyzing global
+predictions from these two models against observations and analyses in both
+physical and spectral spaces, this study demonstrates that GraphCast-predicted
+large scales outperform GEM, particularly for longer lead times. Building on
+this insight, a hybrid NWP-AI system is proposed, wherein GEM-predicted
+large-scale state variables are spectrally nudged toward GraphCast predictions,
+while allowing GEM to freely generate fine-scale details critical for weather
+extremes. Results indicate that this hybrid approach is capable of leveraging
+the strengths of GraphCast to enhance the prediction skill of the GEM model.
+Importantly, trajectories of tropical cyclones are predicted with enhanced
+accuracy without significant changes in intensity. Furthermore, this new hybrid
+system ensures that meteorologists have access to a complete set of forecast
+variables, including those relevant for high-impact weather events.
+",2024-07-08T16:39:25Z,http://arxiv.org/abs/2407.06100v2
+"Improving forecasts of precipitation extremes over Northern and Central
+  Italy using machine learning","Federico Grazzini, Joshua Dorrington, Christian M. Grams, George C. Craig, Linus Magnusson, Frederic Vitart",N/A,ArXiv,2024,N/A,N/A,2024-02-09T16:57:31Z,N/A,ArXiv,"  The accurate prediction of intense precipitation events is one of the main
+objectives of operational weather services. This task is even more relevant
+nowadays, with the rapid progression of global warming which intensifies these
+events. Numerical weather prediction models have improved continuously over
+time, providing uncertainty estimation with dynamical ensembles. However,
+direct precipitation forecasting is still challenging. Greater availability of
+machine learning tools paves the way to a hybrid forecasting approach, with the
+optimal combination of physical models, event statistics, and user-oriented
+post-processing. Here we describe a specific chain, based on a random forest
+pipeline, specialised in recognizing favourable synoptic conditions leading to
+precipitation extremes and subsequently classifying extremes into predefined
+types. The application focuses on Northern and Central Italy, taken as a
+testbed region, but is seamlessly extensible to other regions and timescales.
+The system is called MaLCoX (Machine Learning model predicting Conditions for
+eXtreme precipitation) and is running daily at the Italian regional weather
+service of ARPAE Emilia-Romagna. MalCoX has been trained with the ARCIS gridded
+high-resolution precipitation dataset as the target truth, using the last 20
+years of the ECMWF re-forecast dataset as input predictors. We show that, with
+a long enough training period, the optimal blend of larger-scale information
+with direct model output improves the probabilistic forecast accuracy of
+extremes in the medium range. In addition, with specific methods, we provide a
+useful diagnostic to convey to forecasters the underlying physical storyline
+which makes a meteorological event extreme.
+",2024-02-09T16:57:31Z,http://arxiv.org/abs/2402.06542v1
+"Improving Subseasonal Forecasting in the Western U.S. with Machine
+  Learning","Jessica Hwang, Paulo Orenstein, Judah Cohen, Karl Pfeiffer, Lester Mackey",N/A,ArXiv,2018,N/A,N/A,2018-09-19T20:08:26Z,N/A,ArXiv,"  Water managers in the western United States (U.S.) rely on longterm forecasts
+of temperature and precipitation to prepare for droughts and other wet weather
+extremes. To improve the accuracy of these longterm forecasts, the U.S. Bureau
+of Reclamation and the National Oceanic and Atmospheric Administration (NOAA)
+launched the Subseasonal Climate Forecast Rodeo, a year-long real-time
+forecasting challenge in which participants aimed to skillfully predict
+temperature and precipitation in the western U.S. two to four weeks and four to
+six weeks in advance. Here we present and evaluate our machine learning
+approach to the Rodeo and release our SubseasonalRodeo dataset, collected to
+train and evaluate our forecasting system.
+  Our system is an ensemble of two regression models. The first integrates the
+diverse collection of meteorological measurements and dynamic model forecasts
+in the SubseasonalRodeo dataset and prunes irrelevant predictors using a
+customized multitask model selection procedure. The second uses only historical
+measurements of the target variable (temperature or precipitation) and
+introduces multitask nearest neighbor features into a weighted local linear
+regression. Each model alone is significantly more accurate than the debiased
+operational U.S. Climate Forecasting System (CFSv2), and our ensemble skill
+exceeds that of the top Rodeo competitor for each target variable and forecast
+horizon. Moreover, over 2011-2018, an ensemble of our regression models and
+debiased CFSv2 improves debiased CFSv2 skill by 40-50% for temperature and
+129-169% for precipitation. We hope that both our dataset and our methods will
+help to advance the state of the art in subseasonal forecasting.
+",2018-09-19T20:08:26Z,http://arxiv.org/abs/1809.07394v3
+Adaptive Bias Correction for Improved Subseasonal Forecasting,"Soukayna Mouatadid, Paulo Orenstein, Genevieve Flaspohler, Judah Cohen, Miruna Oprescu, Ernest Fraenkel, Lester Mackey",N/A,ArXiv,2022,N/A,N/A,2022-09-21T21:22:44Z,N/A,ArXiv,"  Subseasonal forecasting -- predicting temperature and precipitation 2 to 6
+weeks ahead -- is critical for effective water allocation, wildfire management,
+and drought and flood mitigation. Recent international research efforts have
+advanced the subseasonal capabilities of operational dynamical models, yet
+temperature and precipitation prediction skills remain poor, partly due to
+stubborn errors in representing atmospheric dynamics and physics inside
+dynamical models. Here, to counter these errors, we introduce an adaptive bias
+correction (ABC) method that combines state-of-the-art dynamical forecasts with
+observations using machine learning. We show that, when applied to the leading
+subseasonal model from the European Centre for Medium-Range Weather Forecasts
+(ECMWF), ABC improves temperature forecasting skill by 60-90% (over baseline
+skills of 0.18-0.25) and precipitation forecasting skill by 40-69% (over
+baseline skills of 0.11-0.15) in the contiguous U.S. We couple these
+performance improvements with a practical workflow to explain ABC skill gains
+and identify higher-skill windows of opportunity based on specific climate
+conditions.
+",2022-09-21T21:22:44Z,http://arxiv.org/abs/2209.10666v3
+GenCast: Diffusion-based ensemble forecasting for medium-range weather,"Ilan Price, Alvaro Sanchez-Gonzalez, Ferran Alet, Tom R. Andersson, Andrew El-Kadi, Dominic Masters, Timo Ewalds, Jacklynn Stott, Shakir Mohamed, Peter Battaglia, Remi Lam, Matthew Willson",N/A,ArXiv,2023,N/A,N/A,2023-12-25T19:30:06Z,N/A,ArXiv,"  Weather forecasts are fundamentally uncertain, so predicting the range of
+probable weather scenarios is crucial for important decisions, from warning the
+public about hazardous weather, to planning renewable energy use. Here, we
+introduce GenCast, a probabilistic weather model with greater skill and speed
+than the top operational medium-range weather forecast in the world, the
+European Centre for Medium-Range Forecasts (ECMWF)'s ensemble forecast, ENS.
+Unlike traditional approaches, which are based on numerical weather prediction
+(NWP), GenCast is a machine learning weather prediction (MLWP) method, trained
+on decades of reanalysis data. GenCast generates an ensemble of stochastic
+15-day global forecasts, at 12-hour steps and 0.25 degree latitude-longitude
+resolution, for over 80 surface and atmospheric variables, in 8 minutes. It has
+greater skill than ENS on 97.4% of 1320 targets we evaluated, and better
+predicts extreme weather, tropical cyclones, and wind power production. This
+work helps open the next chapter in operational weather forecasting, where
+critical weather-dependent decisions are made with greater accuracy and
+efficiency.
+",2023-12-25T19:30:06Z,http://arxiv.org/abs/2312.15796v2
+"Learning to forecast vegetation greenness at fine resolution over Africa
+  with ConvLSTMs","Claire Robin, Christian Requena-Mesa, Vitus Benson, Lazaro Alonso, Jeran Poehls, Nuno Carvalhais, Markus Reichstein",N/A,ArXiv,2022,N/A,N/A,2022-10-24T23:03:36Z,N/A,ArXiv,"  Forecasting the state of vegetation in response to climate and weather events
+is a major challenge. Its implementation will prove crucial in predicting crop
+yield, forest damage, or more generally the impact on ecosystems services
+relevant for socio-economic functioning, which if absent can lead to
+humanitarian disasters. Vegetation status depends on weather and environmental
+conditions that modulate complex ecological processes taking place at several
+timescales. Interactions between vegetation and different environmental drivers
+express responses at instantaneous but also time-lagged effects, often showing
+an emerging spatial context at landscape and regional scales. We formulate the
+land surface forecasting task as a strongly guided video prediction task where
+the objective is to forecast the vegetation developing at very fine resolution
+using topography and weather variables to guide the prediction. We use a
+Convolutional LSTM (ConvLSTM) architecture to address this task and predict
+changes in the vegetation state in Africa using Sentinel-2 satellite NDVI,
+having ERA5 weather reanalysis, SMAP satellite measurements, and topography
+(DEM of SRTMv4.1) as variables to guide the prediction. Ours results highlight
+how ConvLSTM models can not only forecast the seasonal evolution of NDVI at
+high resolution, but also the differential impacts of weather anomalies over
+the baselines. The model is able to predict different vegetation types, even
+those with very high NDVI variability during target length, which is promising
+to support anticipatory actions in the context of drought-related disasters.
+",2022-10-24T23:03:36Z,http://arxiv.org/abs/2210.13648v2
+"A Machine Learning Outlook: Post-processing of Global Medium-range
+  Forecasts","Shreya Agrawal, Rob Carver, Cenk Gazen, Eric Maddy, Vladimir Krasnopolsky, Carla Bromberg, Zack Ontiveros, Tyler Russell, Jason Hickey, Sid Boukabara",N/A,ArXiv,2023,N/A,N/A,2023-03-28T20:48:01Z,N/A,ArXiv,"  Post-processing typically takes the outputs of a Numerical Weather Prediction
+(NWP) model and applies linear statistical techniques to produce improve
+localized forecasts, by including additional observations, or determining
+systematic errors at a finer scale. In this pilot study, we investigate the
+benefits and challenges of using non-linear neural network (NN) based methods
+to post-process multiple weather features -- temperature, moisture, wind,
+geopotential height, precipitable water -- at 30 vertical levels, globally and
+at lead times up to 7 days. We show that we can achieve accuracy improvements
+of up to 12% (RMSE) in a field such as temperature at 850hPa for a 7 day
+forecast. However, we recognize the need to strengthen foundational work on
+objectively measuring a sharp and correct forecast. We discuss the challenges
+of using standard metrics such as root mean squared error (RMSE) or anomaly
+correlation coefficient (ACC) as we move from linear statistical models to more
+complex non-linear machine learning approaches for post-processing global
+weather forecasts.
+",2023-03-28T20:48:01Z,http://arxiv.org/abs/2303.16301v1
+GraphCast: Learning skillful medium-range global weather forecasting,"Remi Lam, Alvaro Sanchez-Gonzalez, Matthew Willson, Peter Wirnsberger, Meire Fortunato, Ferran Alet, Suman Ravuri, Timo Ewalds, Zach Eaton-Rosen, Weihua Hu, Alexander Merose, Stephan Hoyer, George Holland, Oriol Vinyals, Jacklynn Stott, Alexander Pritzel, Shakir Mohamed, Peter Battaglia",N/A,ArXiv,2022,N/A,N/A,2022-12-24T18:15:39Z,N/A,ArXiv,"  Global medium-range weather forecasting is critical to decision-making across
+many social and economic domains. Traditional numerical weather prediction uses
+increased compute resources to improve forecast accuracy, but cannot directly
+use historical weather data to improve the underlying model. We introduce a
+machine learning-based method called ""GraphCast"", which can be trained directly
+from reanalysis data. It predicts hundreds of weather variables, over 10 days
+at 0.25 degree resolution globally, in under one minute. We show that GraphCast
+significantly outperforms the most accurate operational deterministic systems
+on 90% of 1380 verification targets, and its forecasts support better severe
+event prediction, including tropical cyclones, atmospheric rivers, and extreme
+temperatures. GraphCast is a key advance in accurate and efficient weather
+forecasting, and helps realize the promise of machine learning for modeling
+complex dynamical systems.
+",2022-12-24T18:15:39Z,http://arxiv.org/abs/2212.12794v2
+"FuXi-ENS: A machine learning model for medium-range ensemble weather
+  forecasting","Xiaohui Zhong, Lei Chen, Hao Li, Jun Liu, Xu Fan, Jie Feng, Kan Dai, Jing-Jia Luo, Jie Wu, Bo Lu",N/A,ArXiv,2024,N/A,N/A,2024-05-09T17:15:09Z,N/A,ArXiv,"  Ensemble forecasting is crucial for improving weather predictions, especially
+for forecasts of extreme events. Constructing an ensemble prediction system
+(EPS) based on conventional NWP models is highly computationally expensive. ML
+models have emerged as valuable tools for deterministic weather forecasts,
+providing forecasts with significantly reduced computational requirements and
+even surpassing the forecast performance of traditional NWP models. However,
+challenges arise when applying ML models to ensemble forecasting. Recent ML
+models, such as GenCast and SEEDS model, rely on the ERA5 EDA or operational
+NWP ensemble members for forecast generation. Their spatial resolution is also
+considered too coarse for many applications. To overcome these limitations, we
+introduce FuXi-ENS, an advanced ML model designed to deliver 6-hourly global
+ensemble weather forecasts up to 15 days. This model runs at a significantly
+increased spatial resolution of 0.25\textdegree, incorporating 5 atmospheric
+variables at 13 pressure levels, along with 13 surface variables. By leveraging
+the inherent probabilistic nature of Variational AutoEncoder (VAE), FuXi-ENS
+optimizes a loss function that combines the CRPS and the KL divergence between
+the predicted and target distribution, facilitating the incorporation of
+flow-dependent perturbations in both initial conditions and forecast. This
+innovative approach makes FuXi-ENS an advancement over the traditional ones
+that use L1 loss combined with the KL loss in standard VAE models for ensemble
+weather forecasting. Results demonstrate that FuXi-ENS outperforms ensemble
+forecasts from the ECMWF, a world leading NWP model, in the CRPS of 98.1% of
+360 variable and forecast lead time combinations. This achievement underscores
+the potential of the FuXi-ENS model to enhance ensemble weather forecasts,
+offering a promising direction for further development in this field.
+",2024-05-09T17:15:09Z,http://arxiv.org/abs/2405.05925v3
+"A new paradigm for medium-range severe weather forecasts: probabilistic
+  random forest-based predictions","Aaron J. Hill, Russ S. Schumacher, Israel Jirak",N/A,ArXiv,2022,N/A,N/A,2022-08-03T23:37:01Z,N/A,ArXiv,"  Historical observations of severe weather and simulated severe weather
+environments (i.e., features) from the Global Ensemble Forecast System v12
+(GEFSv12) Reforecast Dataset (GEFS/R) are used in conjunction to train and test
+random forest (RF) machine learning (ML) models to probabilistically forecast
+severe weather out to days 4--8. RFs are trained with 9 years of the GEFS/R and
+severe weather reports to establish statistical relationships. Feature
+engineering is briefly explored to examine alternative methods for gathering
+features around observed events, including simplifying features using spatial
+averaging and increasing the GEFS/R ensemble size with time-lagging. Validated
+RF models are tested with ~1.5 years of real-time forecast output from the
+operational GEFSv12 ensemble and are evaluated alongside expert human-generated
+outlooks from the Storm Prediction Center (SPC). Both RF-based forecasts and
+SPC outlooks are skillful with respect to climatology at days 4 and 5 with
+degrading skill thereafter. The RF-based forecasts exhibit tendencies to
+underforecast severe weather events, but they tend to be well-calibrated at
+lower probability thresholds. Spatially averaging predictors during RF training
+allows for prior-day thermodynamic and kinematic environments to generate
+skillful forecasts, while time-lagging acts to expand the forecast areas,
+increasing resolution but decreasing objective skill. The results highlight the
+utility of ML-generated products to aid SPC forecast operations into the medium
+range.
+",2022-08-03T23:37:01Z,http://arxiv.org/abs/2208.02383v1
+"An Earth-System-Oriented View of the S2S Predictability of North
+  American Weather Regimes","Jhayron S. Pérez-Carrasquilla, Maria J. Molina",N/A,ArXiv,2024,N/A,N/A,2024-09-12T16:06:35Z,N/A,ArXiv,"  It is largely understood that subseasonal-to-seasonal (S2S) predictability
+arises from the atmospheric initial state during early lead times, the land
+during intermediate lead times, and the ocean during later lead times. We
+examine whether this hypothesis holds for the S2S prediction of weather regimes
+by training a set of XGBoost models to predict weekly weather regimes over
+North America at 1-to-8-week lead times. Each model used a different predictor
+from one of the three considered Earth system components (atmosphere, ocean, or
+land) sourced from reanalyses. Three additional models were trained using
+land-, ocean-, or atmosphere-only predictors to capture process interactions
+and leverage multiple signals within the respective Earth system component. We
+found that each Earth system component performed more skillfully at different
+forecast horizons, with sensitivity to seasonality and observed (i.e., ground
+truth) weather regime. S2S predictability from the atmosphere was higher during
+winter, from the ocean during summer, and from land during spring and summer.
+Ocean heat content was the best predictor for most seasons and weather regimes
+beyond week 2, highlighting the importance of sub-surface ocean conditions for
+S2S predictability. Soil temperature and water content were also important
+predictors. Climate patterns were associated with changes in the likelihood of
+occurrence for specific weather regimes, including the El Ni\~no-Southern
+Oscillation, Madden Julian Oscillation, North Pacific Gyre, and Indian Ocean
+dipole. This study quantifies predictability from some previously identified
+processes on the large-scale atmospheric circulation and gives insight into new
+sources for future study.
+",2024-09-12T16:06:35Z,http://arxiv.org/abs/2409.08174v1
+"FuXi-Extreme: Improving extreme rainfall and wind forecasts with
+  diffusion model","Xiaohui Zhong, Lei Chen, Jun Liu, Chensen Lin, Yuan Qi, Hao Li",N/A,ArXiv,2023,N/A,N/A,2023-10-25T02:16:02Z,N/A,ArXiv,"  Significant advancements in the development of machine learning (ML) models
+for weather forecasting have produced remarkable results. State-of-the-art
+ML-based weather forecast models, such as FuXi, have demonstrated superior
+statistical forecast performance in comparison to the high-resolution forecasts
+(HRES) of the European Centre for Medium-Range Weather Forecasts (ECMWF).
+However, ML models face a common challenge: as forecast lead times increase,
+they tend to generate increasingly smooth predictions, leading to an
+underestimation of the intensity of extreme weather events. To address this
+challenge, we developed the FuXi-Extreme model, which employs a denoising
+diffusion probabilistic model (DDPM) to restore finer-scale details in the
+surface forecast data generated by the FuXi model in 5-day forecasts. An
+evaluation of extreme total precipitation ($\textrm{TP}$), 10-meter wind speed
+($\textrm{WS10}$), and 2-meter temperature ($\textrm{T2M}$) illustrates the
+superior performance of FuXi-Extreme over both FuXi and HRES. Moreover, when
+evaluating tropical cyclone (TC) forecasts based on International Best Track
+Archive for Climate Stewardship (IBTrACS) dataset, both FuXi and FuXi-Extreme
+shows superior performance in TC track forecasts compared to HRES, but they
+show inferior performance in TC intensity forecasts in comparison to HRES.
+",2023-10-25T02:16:02Z,http://arxiv.org/abs/2310.19822v1
+"Beyond Ensemble Averages: Leveraging Climate Model Ensembles for
+  Subseasonal Forecasting","Elena Orlova, Haokun Liu, Raphael Rossellini, Benjamin A. Cash, Rebecca Willett",N/A,ArXiv,2022,N/A,N/A,2022-11-29T01:11:04Z,N/A,ArXiv,"  Producing high-quality forecasts of key climate variables, such as
+temperature and precipitation, on subseasonal time scales has long been a gap
+in operational forecasting. This study explores an application of machine
+learning (ML) models as post-processing tools for subseasonal forecasting.
+Lagged numerical ensemble forecasts (i.e., an ensemble where the members have
+different initialization dates) and observational data, including relative
+humidity, pressure at sea level, and geopotential height, are incorporated into
+various ML methods to predict monthly average precipitation and two-meter
+temperature two weeks in advance for the continental United States. For
+regression, quantile regression, and tercile classification tasks, we consider
+using linear models, random forests, convolutional neural networks, and stacked
+models (a multi-model approach based on the prediction of the individual ML
+models). Unlike previous ML approaches that often use ensemble mean alone, we
+leverage information embedded in the ensemble forecasts to enhance prediction
+accuracy. Additionally, we investigate extreme event predictions that are
+crucial for planning and mitigation efforts. Considering ensemble members as a
+collection of spatial forecasts, we explore different approaches to using
+spatial information. Trade-offs between different approaches may be mitigated
+with model stacking. Our proposed models outperform standard baselines such as
+climatological forecasts and ensemble means. In addition, we investigate
+feature importance, trade-offs between using the full ensemble or only the
+ensemble mean, and different modes of accounting for spatial variability.
+",2022-11-29T01:11:04Z,http://arxiv.org/abs/2211.15856v5
+"Statistical post-processing of heat index ensemble forecasts: is there a
+  royal road?","Sándor Baran, Ágnes Baran, Florian Pappenberger, Zied Ben Bouallègue",N/A,ArXiv,2020,N/A,N/A,2020-01-23T18:03:32Z,N/A,ArXiv,"  We investigate the effect of statistical post-processing on the probabilistic
+skill of discomfort index (DI) and indoor wet-bulb globe temperature (WBGTid)
+ensemble forecasts, both calculated from the corresponding forecasts of
+temperature and dew point temperature. Two different methodological approaches
+to calibration are compared. In the first case, we start with joint
+post-processing of the temperature and dew point forecasts and then create
+calibrated samples of DI and WBGTid using samples from the obtained bivariate
+predictive distributions. This approach is compared with direct post-processing
+of the heat index ensemble forecasts. For this purpose, a novel ensemble model
+output statistics model based on a generalized extreme value distribution is
+proposed. The predictive performance of both methods is tested on the
+operational temperature and dew point ensemble forecasts of the European Centre
+for Medium-Range Weather Forecasts and the corresponding forecasts of DI and
+WBGTid. For short lead times (up to day 6), both approaches significantly
+improve the forecast skill. Among the competing post-processing methods, direct
+calibration of heat indices exhibits the best predictive performance, very
+closely followed by the more general approach based on joint calibration of
+temperature and dew point temperature. Additionally, a machine learning
+approach is tested and shows comparable performance for the case when one is
+interested only in forecasting heat index warning level categories.
+",2020-01-23T18:03:32Z,http://arxiv.org/abs/2001.08712v2
+Calibrating Bayesian UNet++ for Sub-Seasonal Forecasting,"Busra Asan, Abdullah Akgül, Alper Unal, Melih Kandemir, Gozde Unal",N/A,ArXiv,2024,N/A,N/A,2024-03-25T10:42:48Z,N/A,ArXiv,"  Seasonal forecasting is a crucial task when it comes to detecting the extreme
+heat and colds that occur due to climate change. Confidence in the predictions
+should be reliable since a small increase in the temperatures in a year has a
+big impact on the world. Calibration of the neural networks provides a way to
+ensure our confidence in the predictions. However, calibrating regression
+models is an under-researched topic, especially in forecasters. We calibrate a
+UNet++ based architecture, which was shown to outperform physics-based models
+in temperature anomalies. We show that with a slight trade-off between
+prediction error and calibration error, it is possible to get more reliable and
+sharper forecasts. We believe that calibration should be an important part of
+safety-critical machine learning applications such as weather forecasters.
+",2024-03-25T10:42:48Z,http://arxiv.org/abs/2403.16612v2
+"FourCastNet: Accelerating Global High-Resolution Weather Forecasting
+  using Adaptive Fourier Neural Operators","Thorsten Kurth, Shashank Subramanian, Peter Harrington, Jaideep Pathak, Morteza Mardani, David Hall, Andrea Miele, Karthik Kashinath, Animashree Anandkumar",N/A,ArXiv,2022,N/A,N/A,2022-08-08T06:06:31Z,N/A,ArXiv,"  Extreme weather amplified by climate change is causing increasingly
+devastating impacts across the globe. The current use of physics-based
+numerical weather prediction (NWP) limits accuracy due to high computational
+cost and strict time-to-solution limits. We report that a data-driven deep
+learning Earth system emulator, FourCastNet, can predict global weather and
+generate medium-range forecasts five orders-of-magnitude faster than NWP while
+approaching state-of-the-art accuracy. FourCast-Net is optimized and scales
+efficiently on three supercomputing systems: Selene, Perlmutter, and JUWELS
+Booster up to 3,808 NVIDIA A100 GPUs, attaining 140.8 petaFLOPS in mixed
+precision (11.9%of peak at that scale). The time-to-solution for training
+FourCastNet measured on JUWELS Booster on 3,072GPUs is 67.4minutes, resulting
+in an 80,000times faster time-to-solution relative to state-of-the-art NWP, in
+inference. FourCastNet produces accurate instantaneous weather predictions for
+a week in advance, enables enormous ensembles that better capture weather
+extremes, and supports higher global forecast resolutions.
+",2022-08-08T06:06:31Z,http://arxiv.org/abs/2208.05419v1
+"EarthNet2021: A novel large-scale dataset and challenge for forecasting
+  localized climate impacts","Christian Requena-Mesa, Vitus Benson, Joachim Denzler, Jakob Runge, Markus Reichstein",N/A,ArXiv,2020,N/A,N/A,2020-12-11T11:21:00Z,N/A,ArXiv,"  Climate change is global, yet its concrete impacts can strongly vary between
+different locations in the same region. Seasonal weather forecasts currently
+operate at the mesoscale (> 1 km). For more targeted mitigation and adaptation,
+modelling impacts to < 100 m is needed. Yet, the relationship between driving
+variables and Earth's surface at such local scales remains unresolved by
+current physical models. Large Earth observation datasets now enable us to
+create machine learning models capable of translating coarse weather
+information into high-resolution Earth surface forecasts. Here, we define
+high-resolution Earth surface forecasting as video prediction of satellite
+imagery conditional on mesoscale weather forecasts. Video prediction has been
+tackled with deep learning models. Developing such models requires
+analysis-ready datasets. We introduce EarthNet2021, a new, curated dataset
+containing target spatio-temporal Sentinel 2 satellite imagery at 20 m
+resolution, matched with high-resolution topography and mesoscale (1.28 km)
+weather variables. With over 32000 samples it is suitable for training deep
+neural networks. Comparing multiple Earth surface forecasts is not trivial.
+Hence, we define the EarthNetScore, a novel ranking criterion for models
+forecasting Earth surface reflectance. For model intercomparison we frame
+EarthNet2021 as a challenge with four tracks based on different test sets.
+These allow evaluation of model validity and robustness as well as model
+applicability to extreme events and the complete annual vegetation cycle. In
+addition to forecasting directly observable weather impacts through
+satellite-derived vegetation indices, capable Earth surface models will enable
+downstream applications such as crop yield prediction, forest health
+assessments, coastline management, or biodiversity monitoring. Find data, code,
+and how to participate at www.earthnet.tech .
+",2020-12-11T11:21:00Z,http://arxiv.org/abs/2012.06246v1
+"MT-IceNet -- A Spatial and Multi-Temporal Deep Learning Model for Arctic
+  Sea Ice Forecasting","Sahara Ali, Jianwu Wang",N/A,ArXiv,2023,N/A,N/A,2023-08-08T18:18:31Z,N/A,ArXiv,"  Arctic amplification has altered the climate patterns both regionally and
+globally, resulting in more frequent and more intense extreme weather events in
+the past few decades. The essential part of Arctic amplification is the
+unprecedented sea ice loss as demonstrated by satellite observations.
+Accurately forecasting Arctic sea ice from sub-seasonal to seasonal scales has
+been a major research question with fundamental challenges at play. In addition
+to physics-based Earth system models, researchers have been applying multiple
+statistical and machine learning models for sea ice forecasting. Looking at the
+potential of data-driven approaches to study sea ice variations, we propose
+MT-IceNet - a UNet based spatial and multi-temporal (MT) deep learning model
+for forecasting Arctic sea ice concentration (SIC). The model uses an
+encoder-decoder architecture with skip connections and processes multi-temporal
+input streams to regenerate spatial maps at future timesteps. Using bi-monthly
+and monthly satellite retrieved sea ice data from NSIDC as well as atmospheric
+and oceanic variables from ERA5 reanalysis product during 1979-2021, we show
+that our proposed model provides promising predictive performance for per-pixel
+SIC forecasting with up to 60% decrease in prediction error for a lead time of
+6 months as compared to its state-of-the-art counterparts.
+",2023-08-08T18:18:31Z,http://arxiv.org/abs/2308.04511v1
+"The Hurricane Track Fit Consensus Model for Improving Hurricane
+  Forecasting","Nathan Ginis, Timothy Marchok",N/A,ArXiv,2022,N/A,N/A,2022-10-28T19:47:56Z,N/A,ArXiv,"  We present a new method for creating a model consensus to improve real-time
+hurricane track prediction. The method is based on the statistical fitting of
+historic numerical model track forecasts to the observed storm positions and
+learning from their historical errors and biases. Our method is closest to the
+HFIP Corrected Consensus Approach (HCCA) methodology while using an alternative
+model formulation. Our method creates a separate consensus model for each
+forecast hour making it possible to independently correct the bias of each
+input model for that specific hour. This approach, which we call the Hurricane
+Track Fit (HFIT) model, is computationally efficient and scalable to additional
+numerical models as input, and it produces interpretable coefficients weighing
+model contributions.
+  The new method is evaluated for the 2014-2021 hurricane seasons in the
+Atlantic basin using the input from the best-performing operational track
+forecast guidance at the National Hurricane Center (NHC): the U.S. National
+Weather Service Global Forecast System deterministic and ensemble mean models,
+European Centre for Medium-Range Weather Forecasts deterministic model, the NWS
+Hurricane Weather Research and Forecasting model and the NHC equally weighted
+numerical model track consensus (TVCA). The results of the cross-validation for
+the 2014-2021 hurricane track dataset show that the HFIT consensus model
+consistently reduces the track forecast errors compared to those from the input
+models and the official NHC forecasts (OFCL). For example, at 24h the HFIT
+track forecast errors are smaller by 18.5% and 15.6% than those in AVNI and
+EMXI respectively, and 23% and 15% smaller at 72h. The HFIT forecasts show a
+reduction of errors compared to OFCL by 8.1% at 24h and 7.5% at 72h. We also
+discuss the successful real-time operational performance of HFIT during the
+2022 hurricane season.
+",2022-10-28T19:47:56Z,http://arxiv.org/abs/2210.16382v1
+"ExtremeCast: Boosting Extreme Value Prediction for Global Weather
+  Forecast","Wanghan Xu, Kang Chen, Tao Han, Hao Chen, Wanli Ouyang, Lei Bai",N/A,ArXiv,2024,N/A,N/A,2024-02-02T10:34:13Z,N/A,ArXiv,"  Data-driven weather forecast based on machine learning (ML) has experienced
+rapid development and demonstrated superior performance in the global
+medium-range forecast compared to traditional physics-based dynamical models.
+However, most of these ML models struggle with accurately predicting extreme
+weather, which is related to training loss and the uncertainty of weather
+systems. Through mathematical analysis, we prove that the use of symmetric
+losses, such as the Mean Squared Error (MSE), leads to biased predictions and
+underestimation of extreme values. To address this issue, we introduce Exloss,
+a novel loss function that performs asymmetric optimization and highlights
+extreme values to obtain accurate extreme weather forecast. Beyond the
+evolution in training loss, we introduce a training-free extreme value
+enhancement module named ExBooster, which captures the uncertainty in
+prediction outcomes by employing multiple random samples, thereby increasing
+the hit rate of low-probability extreme events. Combined with an advanced
+global weather forecast model, extensive experiments show that our solution can
+achieve state-of-the-art performance in extreme weather prediction, while
+maintaining the overall forecast accuracy comparable to the top medium-range
+forecast models.
+",2024-02-02T10:34:13Z,http://arxiv.org/abs/2402.01295v4
+"RainBench: Towards Global Precipitation Forecasting from Satellite
+  Imagery","Christian Schroeder de Witt, Catherine Tong, Valentina Zantedeschi, Daniele De Martini, Freddie Kalaitzis, Matthew Chantry, Duncan Watson-Parris, Piotr Bilinski",N/A,ArXiv,2020,N/A,N/A,2020-12-17T15:35:24Z,N/A,ArXiv,"  Extreme precipitation events, such as violent rainfall and hail storms,
+routinely ravage economies and livelihoods around the developing world. Climate
+change further aggravates this issue. Data-driven deep learning approaches
+could widen the access to accurate multi-day forecasts, to mitigate against
+such events. However, there is currently no benchmark dataset dedicated to the
+study of global precipitation forecasts. In this paper, we introduce
+\textbf{RainBench}, a new multi-modal benchmark dataset for data-driven
+precipitation forecasting. It includes simulated satellite data, a selection of
+relevant meteorological data from the ERA5 reanalysis product, and IMERG
+precipitation data. We also release \textbf{PyRain}, a library to process large
+precipitation datasets efficiently. We present an extensive analysis of our
+novel dataset and establish baseline results for two benchmark medium-range
+precipitation forecasting tasks. Finally, we discuss existing data-driven
+weather forecasting methodologies and suggest future research avenues.
+",2020-12-17T15:35:24Z,http://arxiv.org/abs/2012.09670v1
+Multi-modal learning for geospatial vegetation forecasting,"Vitus Benson, Claire Robin, Christian Requena-Mesa, Lazaro Alonso, Nuno Carvalhais, José Cortés, Zhihan Gao, Nora Linscheid, Mélanie Weynants, Markus Reichstein",N/A,ArXiv,2023,N/A,N/A,2023-03-28T17:59:05Z,N/A,ArXiv,"  The innovative application of precise geospatial vegetation forecasting holds
+immense potential across diverse sectors, including agriculture, forestry,
+humanitarian aid, and carbon accounting. To leverage the vast availability of
+satellite imagery for this task, various works have applied deep neural
+networks for predicting multispectral images in photorealistic quality.
+However, the important area of vegetation dynamics has not been thoroughly
+explored. Our study breaks new ground by introducing GreenEarthNet, the first
+dataset specifically designed for high-resolution vegetation forecasting, and
+Contextformer, a novel deep learning approach for predicting vegetation
+greenness from Sentinel 2 satellite images with fine resolution across Europe.
+Our multi-modal transformer model Contextformer leverages spatial context
+through a vision backbone and predicts the temporal dynamics on local context
+patches incorporating meteorological time series in a parameter-efficient
+manner. The GreenEarthNet dataset features a learned cloud mask and an
+appropriate evaluation scheme for vegetation modeling. It also maintains
+compatibility with the existing satellite imagery forecasting dataset
+EarthNet2021, enabling cross-dataset model comparisons. Our extensive
+qualitative and quantitative analyses reveal that our methods outperform a
+broad range of baseline techniques. This includes surpassing previous
+state-of-the-art models on EarthNet2021, as well as adapted models from time
+series forecasting and video prediction. To the best of our knowledge, this
+work presents the first models for continental-scale vegetation modeling at
+fine resolution able to capture anomalies beyond the seasonal cycle, thereby
+paving the way for predicting vegetation health and behaviour in response to
+climate variability and extremes.
+",2023-03-28T17:59:05Z,http://arxiv.org/abs/2303.16198v2
+"Multivariate Ensemble Forecast Framework for Demand Prediction of
+  Anomalous Days","Muhammad Qamar Raza, N. Mithulananthan, Jiaming Li, Kwang Y. Lee",N/A,ArXiv,2018,N/A,N/A,2018-11-23T01:37:35Z,N/A,ArXiv,"  An accurate load forecast is always important for the power industry and
+energy players as it enables stakeholders to make critical decisions. In
+addition, its importance is further increased with growing uncertainties in the
+generation sector due to the high penetration of renewable energy and the
+introduction of demand side management strategies. An incremental improvement
+in grid-level demand forecast of anomalous days can potentially save millions
+of dollars. However, due to an increasing penetration of renewable energy
+resources and their dependency on several meteorological and exogenous
+variables, accurate load forecasting of anomalous days has now become very
+challenging. To improve the prediction accuracy of the load forecasting, an
+ensemble forecast framework (ENFF) is proposed with a systematic combination of
+three multiple predictors, namely Elman neural network (ELM), feedforward
+neural network (FNN) and radial basis function (RBF) neural network. These
+predictors are trained using global particle swarm optimization (GPSO) to
+improve their prediction capability in the ENFF. The outputs of individual
+predictors are combined using a trim aggregation technique by removing
+forecasting anomalies. Real recorded data of New England ISO grid is used for
+training and testing of the ENFF for anomalous days. The forecast results of
+the proposed ENFF indicate a significant improvement in prediction accuracy in
+comparison to autoregressive integrated moving average (ARIMA) and
+back-propagation neural networks (BPNN) based benchmark models.
+",2018-11-23T01:37:35Z,http://arxiv.org/abs/1811.09339v1
+"CAS-Canglong: A skillful 3D Transformer model for sub-seasonal to
+  seasonal global sea surface temperature prediction","Longhao Wang, Xuanze Zhang, L. Ruby Leung, Francis H. S. Chiew, Amir AghaKouchak, Kairan Ying, Yongqiang Zhang",N/A,ArXiv,2024,N/A,N/A,2024-09-09T06:57:07Z,N/A,ArXiv,"  Accurate prediction of global sea surface temperature at sub-seasonal to
+seasonal (S2S) timescale is critical for drought and flood forecasting, as well
+as for improving disaster preparedness in human society. Government departments
+or academic studies normally use physics-based numerical models to predict S2S
+sea surface temperature and corresponding climate indices, such as El
+Ni\~no-Southern Oscillation. However, these models are hampered by
+computational inefficiencies, limited retention of ocean-atmosphere initial
+conditions, and significant uncertainty and biases. Here, we introduce a novel
+three-dimensional deep learning neural network to model the nonlinear and
+complex coupled atmosphere-ocean weather systems. This model incorporates
+climatic and temporal features and employs a self-attention mechanism to
+enhance the prediction of global S2S sea surface temperature pattern. Compared
+to the physics-based models, it shows significant computational efficiency and
+predictive capability, improving one to three months sea surface temperature
+predictive skill by 13.7% to 77.1% in seven ocean regions with dominant
+influence on S2S variability over land. This achievement underscores the
+significant potential of deep learning for largely improving forecasting skills
+at the S2S scale over land.
+",2024-09-09T06:57:07Z,http://arxiv.org/abs/2409.05369v1
+"FuXi: A cascade machine learning forecasting system for 15-day global
+  weather forecast","Lei Chen, Xiaohui Zhong, Feng Zhang, Yuan Cheng, Yinghui Xu, Yuan Qi, Hao Li",N/A,ArXiv,2023,N/A,N/A,2023-06-22T13:34:26Z,N/A,ArXiv,"  Over the past few years, due to the rapid development of machine learning
+(ML) models for weather forecasting, state-of-the-art ML models have shown
+superior performance compared to the European Centre for Medium-Range Weather
+Forecasts (ECMWF)'s high-resolution forecast (HRES) in 10-day forecasts at a
+spatial resolution of 0.25 degree. However, the challenge remains to perform
+comparably to the ECMWF ensemble mean (EM) in 15-day forecasts. Previous
+studies have demonstrated the importance of mitigating the accumulation of
+forecast errors for effective long-term forecasts. Despite numerous efforts to
+reduce accumulation errors, including autoregressive multi-time step loss,
+using a single model is found to be insufficient to achieve optimal performance
+in both short and long lead times. Therefore, we present FuXi, a cascaded ML
+weather forecasting system that provides 15-day global forecasts with a
+temporal resolution of 6 hours and a spatial resolution of 0.25 degree. FuXi is
+developed using 39 years of the ECMWF ERA5 reanalysis dataset. The performance
+evaluation, based on latitude-weighted root mean square error (RMSE) and
+anomaly correlation coefficient (ACC), demonstrates that FuXi has comparable
+forecast performance to ECMWF EM in 15-day forecasts, making FuXi the first
+ML-based weather forecasting system to accomplish this achievement.
+",2023-06-22T13:34:26Z,http://arxiv.org/abs/2306.12873v3
+"Kilometer-Scale Convection Allowing Model Emulation using Generative
+  Diffusion Modeling","Jaideep Pathak, Yair Cohen, Piyush Garg, Peter Harrington, Noah Brenowitz, Dale Durran, Morteza Mardani, Arash Vahdat, Shaoming Xu, Karthik Kashinath, Michael Pritchard",N/A,ArXiv,2024,N/A,N/A,2024-08-20T15:56:01Z,N/A,ArXiv,"  Storm-scale convection-allowing models (CAMs) are an important tool for
+predicting the evolution of thunderstorms and mesoscale convective systems that
+result in damaging extreme weather. By explicitly resolving convective dynamics
+within the atmosphere they afford meteorologists the nuance needed to provide
+outlook on hazard. Deep learning models have thus far not proven skilful at
+km-scale atmospheric simulation, despite being competitive at coarser
+resolution with state-of-the-art global, medium-range weather forecasting. We
+present a generative diffusion model called StormCast, which emulates the
+high-resolution rapid refresh (HRRR) model-NOAA's state-of-the-art 3km
+operational CAM. StormCast autoregressively predicts 99 state variables at km
+scale using a 1-hour time step, with dense vertical resolution in the
+atmospheric boundary layer, conditioned on 26 synoptic variables. We present
+evidence of successfully learnt km-scale dynamics including competitive 1-6
+hour forecast skill for composite radar reflectivity alongside physically
+realistic convective cluster evolution, moist updrafts, and cold pool
+morphology. StormCast predictions maintain realistic power spectra for multiple
+predicted variables across multi-hour forecasts. Together, these results
+establish the potential for autoregressive ML to emulate CAMs -- opening up new
+km-scale frontiers for regional ML weather prediction and future climate hazard
+dynamical downscaling.
+",2024-08-20T15:56:01Z,http://arxiv.org/abs/2408.10958v1
+"Feasibility of machine learning-based rice yield prediction in India at
+  the district level using climate reanalysis data","Djavan De Clercq, Adam Mahdi",N/A,ArXiv,2024,N/A,N/A,2024-03-12T13:31:13Z,N/A,ArXiv,"  Yield forecasting, the science of predicting agricultural productivity before
+the crop harvest occurs, helps a wide range of stakeholders make better
+decisions around agricultural planning. This study aims to investigate whether
+machine learning-based yield prediction models can capably predict Kharif
+season rice yields at the district level in India several months before the
+rice harvest takes place. The methodology involved training 19 machine learning
+models such as CatBoost, LightGBM, Orthogonal Matching Pursuit, and Extremely
+Randomized Trees on 20 years of climate, satellite, and rice yield data across
+247 of Indian rice-producing districts. In addition to model-building, a
+dynamic dashboard was built understand how the reliability of rice yield
+predictions varies across districts. The results of the proof-of-concept
+machine learning pipeline demonstrated that rice yields can be predicted with a
+reasonable degree of accuracy, with out-of-sample R2, MAE, and MAPE performance
+of up to 0.82, 0.29, and 0.16 respectively. These results outperformed test set
+performance reported in related literature on rice yield modeling in other
+contexts and countries. In addition, SHAP value analysis was conducted to infer
+both the importance and directional impact of the climate and remote sensing
+variables included in the model. Important features driving rice yields
+included temperature, soil water volume, and leaf area index. In particular,
+higher temperatures in August correlate with increased rice yields,
+particularly when the leaf area index in August is also high. Building on the
+results, a proof-of-concept dashboard was developed to allow users to easily
+explore which districts may experience a rise or fall in yield relative to the
+previous year.
+",2024-03-12T13:31:13Z,http://arxiv.org/abs/2403.07967v1
+Solar Power Forecasting Using Support Vector Regression,"Mohamed Abuella, Badrul Chowdhury",N/A,ArXiv,2017,N/A,N/A,2017-03-29T00:58:01Z,N/A,ArXiv,"  Generation and load balance is required in the economic scheduling of
+generating units in the smart grid. Variable energy generations, particularly
+from wind and solar energy resources, are witnessing a rapid boost, and, it is
+anticipated that with a certain level of their penetration, they can become
+noteworthy sources of uncertainty. As in the case of load demand, energy
+forecasting can also be used to mitigate some of the challenges that arise from
+the uncertainty in the resource. While wind energy forecasting research is
+considered mature, solar energy forecasting is witnessing a steadily growing
+attention from the research community. This paper presents a support vector
+regression model to produce solar power forecasts on a rolling basis for 24
+hours ahead over an entire year, to mimic the practical business of energy
+forecasting. Twelve weather variables are considered from a high-quality
+benchmark dataset and new variables are extracted. The added value of the heat
+index and wind speed as additional variables to the model is studied across
+different seasons. The support vector regression model performance is compared
+with artificial neural networks and multiple linear regression models for
+energy forecasting.
+",2017-03-29T00:58:01Z,http://arxiv.org/abs/1703.09851v1
+"A Deep-learning Real-time Bias Correction Method for Significant Wave
+  Height Forecasts in the Western North Pacific","Wei Zhang, Yu Sun, Yapeng Wu, Junyu Dong, Xiaojiang Song, Zhiyi Gao, Renbo Pang, Boyu Guoan",N/A,ArXiv,2023,N/A,N/A,2023-11-25T11:34:00Z,N/A,ArXiv,"  Significant wave height is one of the most important parameters
+characterizing ocean waves, and accurate numerical ocean wave forecasting is
+crucial for coastal protection and shipping. However, due to the randomness and
+nonlinearity of the wind fields that generate ocean waves and the complex
+interaction between wave and wind fields, current forecasts of numerical ocean
+waves have biases. In this study, a spatiotemporal deep-learning method was
+employed to correct gridded SWH forecasts from the ECMWF-IFS. This method was
+built on the trajectory gated recurrent unit deep neural network,and it
+conducts real-time rolling correction for the 0-240h SWH forecasts from
+ECMWF-IFS. The correction model is co-driven by wave and wind fields, providing
+better results than those based on wave fields alone. A novel pixel-switch loss
+function was developed. The pixel-switch loss function can dynamically
+fine-tune the pre-trained correction model, focusing on pixels with large
+biases in SWH forecasts. According to the seasonal characteristics of SWH, four
+correction models were constructed separately, for spring, summer, autumn, and
+winter. The experimental results show that, compared with the original ECMWF
+SWH predictions, the correction was most effective in spring, when the mean
+absolute error decreased by 12.972~46.237%. Although winter had the worst
+performance, the mean absolute error decreased by 13.794~38.953%. The corrected
+results improved the original ECMWF SWH forecasts under both normal and extreme
+weather conditions, indicating that our SWH correction model is robust and
+generalizable.
+",2023-11-25T11:34:00Z,http://arxiv.org/abs/2311.15001v1
+"Coupled Ocean-Atmosphere Dynamics in a Machine Learning Earth System
+  Model","Chenggong Wang, Michael S. Pritchard, Noah Brenowitz, Yair Cohen, Boris Bonev, Thorsten Kurth, Dale Durran, Jaideep Pathak",N/A,ArXiv,2024,N/A,N/A,2024-06-12T20:29:14Z,N/A,ArXiv,"  Seasonal climate forecasts are socioeconomically important for managing the
+impacts of extreme weather events and for planning in sectors like agriculture
+and energy. Climate predictability on seasonal timescales is tied to boundary
+effects of the ocean on the atmosphere and coupled interactions in the
+ocean-atmosphere system. We present the Ocean-linked-atmosphere (Ola) model, a
+high-resolution (0.25{\deg}) Artificial Intelligence/ Machine Learning (AI/ML)
+coupled earth-system model which separately models the ocean and atmosphere
+dynamics using an autoregressive Spherical Fourier Neural Operator
+architecture, with a view towards enabling fast, accurate, large ensemble
+forecasts on the seasonal timescale. We find that Ola exhibits learned
+characteristics of ocean-atmosphere coupled dynamics including tropical oceanic
+waves with appropriate phase speeds, and an internally generated El
+Ni\~no/Southern Oscillation (ENSO) having realistic amplitude, geographic
+structure, and vertical structure within the ocean mixed layer. We present
+initial evidence of skill in forecasting the ENSO which compares favorably to
+the SPEAR model of the Geophysical Fluid Dynamics Laboratory.
+",2024-06-12T20:29:14Z,http://arxiv.org/abs/2406.08632v1
+"Extreme Precipitation Seasonal Forecast Using a Transformer Neural
+  Network","Daniel Salles Civitarese, Daniela Szwarcman, Bianca Zadrozny, Campbell Watson",N/A,ArXiv,2021,N/A,N/A,2021-07-14T17:02:15Z,N/A,ArXiv,"  An impact of climate change is the increase in frequency and intensity of
+extreme precipitation events. However, confidently predicting the likelihood of
+extreme precipitation at seasonal scales remains an outstanding challenge.
+Here, we present an approach to forecasting the quantiles of the maximum daily
+precipitation in each week up to six months ahead using the temporal fusion
+transformer (TFT) model. Through experiments in two regions, we compare TFT
+predictions with those of two baselines: climatology and a calibrated ECMWF
+SEAS5 ensemble forecast (S5). Our results show that, in terms of quantile risk
+at six month lead time, the TFT predictions significantly outperform those from
+S5 and show an overall small improvement compared to climatology. The TFT also
+responds positively to departures from normal that climatology cannot.
+",2021-07-14T17:02:15Z,http://arxiv.org/abs/2107.06846v1
+"Exploring the Potential of Hybrid Machine-Learning/Physics-Based
+  Modeling for Atmospheric/Oceanic Prediction Beyond the Medium Range","Dhruvit Patel, Troy Arcomano, Brian Hunt, Istvan Szunyogh, Edward Ott",N/A,ArXiv,2024,N/A,N/A,2024-05-29T20:56:44Z,N/A,ArXiv,"  This paper explores the potential of a hybrid modeling approach that combines
+machine learning (ML) with conventional physics-based modeling for weather
+prediction beyond the medium range. It extends the work of Arcomano et al.
+(2022), which tested the approach for short- and medium-range weather
+prediction, and the work of Arcomano et al. (2023), which investigated its
+potential for climate modeling. The hybrid model used for the forecast
+experiments of the paper is based on the low-resolution, simplified
+parameterization atmospheric general circulation model (AGCM) SPEEDY. In
+addition to the hybridized prognostic variables of SPEEDY, the current version
+of the model has three purely ML-based prognostic variables. One of these is
+6~h cumulative precipitation, another is the sea surface temperature, while the
+third is the heat content of the top 300 m deep layer of the ocean. The model
+has skill in predicting the El Ni\~no cycle and its global teleconnections with
+precipitation for 3-7 months depending on the season. The model captures
+equatorial variability of the precipitation associated with Kelvin and Rossby
+waves and MJO. Predictions of the precipitation in the equatorial region have
+skill for 15 days in the East Pacific and 11.5 days in the West Pacific. Though
+the model has low spatial resolution, for these tasks it has prediction skill
+comparable to what has been published for high-resolution, purely
+physics-based, conventional operational forecast models.
+",2024-05-29T20:56:44Z,http://arxiv.org/abs/2405.19518v1
+"Predicting Temperature of Major Cities Using Machine Learning and Deep
+  Learning","Wasiou Jaharabi, MD Ibrahim Al Hossain, Rownak Tahmid, Md. Zuhayer Islam, T. M. Saad Rayhan",N/A,ArXiv,2023,N/A,N/A,2023-09-23T10:23:00Z,N/A,ArXiv,"  Currently, the issue that concerns the world leaders most is climate change
+for its effect on agriculture, environment and economies of daily life. So, to
+combat this, temperature prediction with strong accuracy is vital. So far, the
+most effective widely used measure for such forecasting is Numerical weather
+prediction (NWP) which is a mathematical model that needs broad data from
+different applications to make predictions. This expensive, time and labor
+consuming work can be minimized through making such predictions using Machine
+learning algorithms. Using the database made by University of Dayton which
+consists the change of temperature in major cities we used the Time Series
+Analysis method where we use LSTM for the purpose of turning existing data into
+a tool for future prediction. LSTM takes the long-term data as well as any
+short-term exceptions or anomalies that may have occurred and calculates trend,
+seasonality and the stationarity of a data. By using models such as ARIMA,
+SARIMA, Prophet with the concept of RNN and LSTM we can, filter out any
+abnormalities, preprocess the data compare it with previous trends and make a
+prediction of future trends. Also, seasonality and stationarity help us analyze
+the reoccurrence or repeat over one year variable and removes the constrain of
+time in which the data was dependent so see the general changes that are
+predicted. By doing so we managed to make prediction of the temperature of
+different cities during any time in future based on available data and built a
+method of accurate prediction. This document contains our methodology for being
+able to make such predictions.
+",2023-09-23T10:23:00Z,http://arxiv.org/abs/2309.13330v1
+"Using Deep Learning to Identify Initial Error Sensitivity for
+  Interpretable ENSO Forecasts","Kinya Toride, Matthew Newman, Andrew Hoell, Antonietta Capotondi, Jakob Schlör, Dillon J. Amaya",N/A,ArXiv,2024,N/A,N/A,2024-04-23T18:10:18Z,N/A,ArXiv,"  We introduce an interpretable-by-design method, optimized model-analog, that
+integrates deep learning with model-analog forecasting which generates
+forecasts from similar initial climate states in a repository of model
+simulations. This hybrid framework employs a convolutional neural network to
+estimate state-dependent weights to identify initial analog states that lead to
+shadowing target trajectories. The advantage of our method lies in its inherent
+interpretability, offering insights into initial-error-sensitive regions
+through estimated weights and the ability to trace the physically-based
+evolution of the system through analog forecasting. We evaluate our approach
+using the Community Earth System Model Version 2 Large Ensemble to forecast the
+El Ni\~no-Southern Oscillation (ENSO) on a seasonal-to-annual time scale.
+Results show a 10% improvement in forecasting equatorial Pacific sea surface
+temperature anomalies at 9-12 months leads compared to the unweighted
+model-analog technique. Furthermore, our model demonstrates improvements in
+boreal winter and spring initialization when evaluated against a reanalysis
+dataset. Our approach reveals state-dependent regional sensitivity linked to
+various seasonally varying physical processes, including the Pacific Meridional
+Modes, equatorial recharge oscillator, and stochastic wind forcing.
+Additionally, forecasts of El Ni\~no and La Ni\~na are sensitive to different
+initial states: El Ni\~no forecasts are more sensitive to initial error in
+tropical Pacific sea surface temperature in boreal winter, while La Ni\~na
+forecasts are more sensitive to initial error in tropical Pacific zonal wind
+stress in boreal summer. This approach has broad implications for forecasting
+diverse climate phenomena, including regional temperature and precipitation,
+which are challenging for the model-analog approach alone.
+",2024-04-23T18:10:18Z,http://arxiv.org/abs/2404.15419v4
+"Sub-Seasonal Climate Forecasting via Machine Learning: Challenges,
+  Analysis, and Advances","Sijie He, Xinyan Li, Timothy DelSole, Pradeep Ravikumar, Arindam Banerjee",N/A,ArXiv,2020,N/A,N/A,2020-06-14T18:39:27Z,N/A,ArXiv,"  Sub-seasonal climate forecasting (SSF) focuses on predicting key climate
+variables such as temperature and precipitation in the 2-week to 2-month time
+scales. Skillful SSF would have immense societal value, in areas such as
+agricultural productivity, water resource management, transportation and
+aviation systems, and emergency planning for extreme weather events. However,
+SSF is considered more challenging than either weather prediction or even
+seasonal prediction. In this paper, we carefully study a variety of machine
+learning (ML) approaches for SSF over the US mainland. While
+atmosphere-land-ocean couplings and the limited amount of good quality data
+makes it hard to apply black-box ML naively, we show that with carefully
+constructed feature representations, even linear regression models, e.g.,
+Lasso, can be made to perform well. Among a broad suite of 10 ML approaches
+considered, gradient boosting performs the best, and deep learning (DL) methods
+show some promise with careful architecture choices. Overall, suitable ML
+methods are able to outperform the climatological baseline, i.e., predictions
+based on the 30-year average at a given location and time. Further, based on
+studying feature importance, ocean (especially indices based on climatic
+oscillations such as El Nino) and land (soil moisture) covariates are found to
+be predictive, whereas atmospheric covariates are not considered helpful.
+",2020-06-14T18:39:27Z,http://arxiv.org/abs/2006.07972v2
+"An Asymmetric Loss with Anomaly Detection LSTM Framework for Power
+  Consumption Prediction","Jihan Ghanim, Maha Issa, Mariette Awad",N/A,ArXiv,2023,N/A,N/A,2023-02-05T17:16:15Z,N/A,ArXiv,"  Building an accurate load forecasting model with minimal underpredictions is
+vital to prevent any undesired power outages due to underproduction of
+electricity. However, the power consumption patterns of the residential sector
+contain fluctuations and anomalies making them challenging to predict. In this
+paper, we propose multiple Long Short-Term Memory (LSTM) frameworks with
+different asymmetric loss functions to impose a higher penalty on
+underpredictions. We also apply a density-based spatial clustering of
+applications with noise (DBSCAN) anomaly detection approach, prior to the load
+forecasting task, to remove any present oultiers. Considering the effect of
+weather and social factors, seasonality splitting is performed on the three
+considered datasets from France, Germany, and Hungary containing hourly power
+consumption, weather, and calendar features. Root-mean-square error (RMSE)
+results show that removing the anomalies efficiently reduces the
+underestimation and overestimation errors in all the seasonal datasets.
+Additionally, asymmetric loss functions and seasonality splitting effectively
+minimize underestimations despite increasing the overestimation error to some
+degree. Reducing underpredictions of electricity consumption is essential to
+prevent power outages that can be damaging to the community.
+",2023-02-05T17:16:15Z,http://arxiv.org/abs/2302.10889v1
+Gaussian Process Regression for Arctic Coastal Erosion Forecasting,"Matthew Kupilik, Frank Witmer, Euan-Angus MacLeod, Caixia Wang, Tom Ravens",N/A,ArXiv,2017,N/A,N/A,2017-12-04T01:01:39Z,N/A,ArXiv,"  Arctic coastal morphology is governed by multiple factors, many of which are
+affected by climatological changes. As the season length for shorefast ice
+decreases and temperatures warm permafrost soils, coastlines are more
+susceptible to erosion from storm waves. Such coastal erosion is a concern,
+since the majority of the population centers and infrastructure in the Arctic
+are located near the coasts. Stakeholders and decision makers increasingly need
+models capable of scenario-based predictions to assess and mitigate the effects
+of coastal morphology on infrastructure and land use. Our research uses
+Gaussian process models to forecast Arctic coastal erosion along the Beaufort
+Sea near Drew Point, AK. Gaussian process regression is a data-driven modeling
+methodology capable of extracting patterns and trends from data-sparse
+environments such as remote Arctic coastlines. To train our model, we use
+annual coastline positions and near-shore summer temperature averages from
+existing datasets and extend these data by extracting additional coastlines
+from satellite imagery. We combine our calibrated models with future climate
+models to generate a range of plausible future erosion scenarios. Our results
+show that the Gaussian process methodology substantially improves yearly
+predictions compared to linear and nonlinear least squares methods, and is
+capable of generating detailed forecasts suitable for use by decision makers.
+",2017-12-04T01:01:39Z,http://arxiv.org/abs/1712.00867v1
+"Huge Ensembles Part I: Design of Ensemble Weather Forecasts using
+  Spherical Fourier Neural Operators","Ankur Mahesh, William Collins, Boris Bonev, Noah Brenowitz, Yair Cohen, Joshua Elms, Peter Harrington, Karthik Kashinath, Thorsten Kurth, Joshua North, Travis OBrien, Michael Pritchard, David Pruitt, Mark Risser, Shashank Subramanian, Jared Willard",N/A,ArXiv,2024,N/A,N/A,2024-08-06T11:04:25Z,N/A,ArXiv,"  Studying low-likelihood high-impact extreme weather events in a warming world
+is a significant and challenging task for current ensemble forecasting systems.
+While these systems presently use up to 100 members, larger ensembles could
+enrich the sampling of internal variability. They may capture the long tails
+associated with climate hazards better than traditional ensemble sizes. Due to
+computational constraints, it is infeasible to generate huge ensembles
+(comprised of 1,000-10,000 members) with traditional, physics-based numerical
+models. In this two-part paper, we replace traditional numerical simulations
+with machine learning (ML) to generate hindcasts of huge ensembles. In Part I,
+we construct an ensemble weather forecasting system based on Spherical Fourier
+Neural Operators (SFNO), and we discuss important design decisions for
+constructing such an ensemble. The ensemble represents model uncertainty
+through perturbed-parameter techniques, and it represents initial condition
+uncertainty through bred vectors, which sample the fastest growing modes of the
+forecast. Using the European Centre for Medium-Range Weather Forecasts
+Integrated Forecasting System (IFS) as a baseline, we develop an evaluation
+pipeline composed of mean, spectral, and extreme diagnostics. Using
+large-scale, distributed SFNOs with 1.1 billion learned parameters, we achieve
+calibrated probabilistic forecasts. As the trajectories of the individual
+members diverge, the ML ensemble mean spectra degrade with lead time,
+consistent with physical expectations. However, the individual ensemble
+members' spectra stay constant with lead time. Therefore, these members
+simulate realistic weather states, and the ML ensemble thus passes a crucial
+spectral test in the literature. The IFS and ML ensembles have similar Extreme
+Forecast Indices, and we show that the ML extreme weather forecasts are
+reliable and discriminating.
+",2024-08-06T11:04:25Z,http://arxiv.org/abs/2408.03100v1
+"Convolutional Neural Network for Convective Storm Nowcasting Using 3D
+  Doppler Weather Radar Data","Lei Han, Juanzhen Sun, Wei Zhang",N/A,ArXiv,2019,N/A,N/A,2019-11-14T15:42:12Z,N/A,ArXiv,"  Convective storms are one of the severe weather hazards found during the warm
+season. Doppler weather radar is the only operational instrument that can
+frequently sample the detailed structure of convective storm which has a small
+spatial scale and short lifetime. For the challenging task of short-term
+convective storm forecasting, 3-D radar images contain information about the
+processes in convective storm. However, effectively extracting such information
+from multisource raw data has been problematic due to a lack of methodology and
+computation limitations. Recent advancements in deep learning techniques and
+graphics processing units now make it possible. This article investigates the
+feasibility and performance of an end-to-end deep learning nowcasting method.
+The nowcasting problem was transformed into a classification problem first, and
+then, a deep learning method that uses a convolutional neural network was
+presented to make predictions. On the first layer of CNN, a cross-channel 3D
+convolution was proposed to fuse 3D raw data. The CNN method eliminates the
+handcrafted feature engineering, i.e., the process of using domain knowledge of
+the data to manually design features. Operationally produced historical data of
+the Beijing-Tianjin-Hebei region in China was used to train the nowcasting
+system and evaluate its performance; 3737332 samples were collected in the
+training data set. The experimental results show that the deep learning method
+improves nowcasting skills compared with traditional machine learning methods.
+",2019-11-14T15:42:12Z,http://arxiv.org/abs/1911.06185v2
+"Global Lightning-Ignited Wildfires Prediction and Climate Change
+  Projections based on Explainable Machine Learning Models","Assaf Shmuel, Teddy Lazebnik, Oren Glickman, Eyal Heifetz, Colin Price",N/A,ArXiv,2024,N/A,N/A,2024-09-16T07:19:08Z,N/A,ArXiv,"  Wildfires pose a significant natural disaster risk to populations and
+contribute to accelerated climate change. As wildfires are also affected by
+climate change, extreme wildfires are becoming increasingly frequent. Although
+they occur less frequently globally than those sparked by human activities,
+lightning-ignited wildfires play a substantial role in carbon emissions and
+account for the majority of burned areas in certain regions. While existing
+computational models, especially those based on machine learning, aim to
+predict lightning-ignited wildfires, they are typically tailored to specific
+regions with unique characteristics, limiting their global applicability. In
+this study, we present machine learning models designed to characterize and
+predict lightning-ignited wildfires on a global scale. Our approach involves
+classifying lightning-ignited versus anthropogenic wildfires, and estimating
+with high accuracy the probability of lightning to ignite a fire based on a
+wide spectrum of factors such as meteorological conditions and vegetation.
+Utilizing these models, we analyze seasonal and spatial trends in
+lightning-ignited wildfires shedding light on the impact of climate change on
+this phenomenon. We analyze the influence of various features on the models
+using eXplainable Artificial Intelligence (XAI) frameworks. Our findings
+highlight significant global differences between anthropogenic and
+lightning-ignited wildfires. Moreover, we demonstrate that, even over a short
+time span of less than a decade, climate changes have steadily increased the
+global risk of lightning-ignited wildfires. This distinction underscores the
+imperative need for dedicated predictive models and fire weather indices
+tailored specifically to each type of wildfire.
+",2024-09-16T07:19:08Z,http://arxiv.org/abs/2409.10046v1
+"Long-term instabilities of deep learning-based digital twins of the
+  climate system: The cause and a solution","Ashesh Chattopadhyay, Pedram Hassanzadeh",N/A,ArXiv,2023,N/A,N/A,2023-04-14T09:49:11Z,N/A,ArXiv,"  Long-term stability is a critical property for deep learning-based
+data-driven digital twins of the Earth system. Such data-driven digital twins
+enable sub-seasonal and seasonal predictions of extreme environmental events,
+probabilistic forecasts, that require a large number of ensemble members, and
+computationally tractable high-resolution Earth system models where expensive
+components of the models can be replaced with cheaper data-driven surrogates.
+Owing to computational cost, physics-based digital twins, though long-term
+stable, are intractable for real-time decision-making. Data-driven digital
+twins offer a cheaper alternative to them and can provide real-time
+predictions. However, such digital twins can only provide short-term forecasts
+accurately since they become unstable when time-integrated beyond 20 days.
+Currently, the cause of the instabilities is unknown, and the methods that are
+used to improve their stability horizons are ad-hoc and lack rigorous theory.
+In this paper, we reveal that the universal causal mechanism for these
+instabilities in any turbulent flow is due to \textit{spectral bias} wherein,
+\textit{any} deep learning architecture is biased to learn only the large-scale
+dynamics and ignores the small scales completely. We further elucidate how
+turbulence physics and the absence of convergence in deep learning-based
+time-integrators amplify this bias leading to unstable error propagation.
+Finally, using the quasigeostrophic flow and ECMWF Reanalysis data as test
+cases, we bridge the gap between deep learning theory and fundamental numerical
+analysis to propose one mitigative solution to such instabilities. We develop
+long-term stable data-driven digital twins for the climate system and
+demonstrate accurate short-term forecasts, and hundreds of years of long-term
+stable time-integration with accurate mean and variability.
+",2023-04-14T09:49:11Z,http://arxiv.org/abs/2304.07029v1
+"Machine learning applications for weather and climate need greater focus
+  on extremes",Peter AG Watson,N/A,ArXiv,2022,N/A,N/A,2022-07-15T10:38:52Z,N/A,ArXiv,"  Multiple studies have now demonstrated that machine learning (ML) can give
+improved skill for predicting or simulating fairly typical weather events, for
+tasks such as short-term and seasonal weather forecasting, downscaling
+simulations to higher resolution and emulating and speeding up expensive model
+parameterisations. Many of these used ML methods with very high numbers of
+parameters, such as neural networks, which are the focus of the discussion
+here. Not much attention has been given to the performance of these methods for
+extreme event severities of relevance for many critical weather and climate
+prediction applications, with return periods of more than a few years. This
+leaves a lot of uncertainty about the usefulness of these methods, particularly
+for general purpose prediction systems that must perform reliably in extreme
+situations. ML models may be expected to struggle to predict extremes due to
+there usually being few samples of such events. However, there are some studies
+that do indicate that ML models can have reasonable skill for extreme weather,
+and that it is not hopeless to use them in situations requiring extrapolation.
+This article reviews these studies and argues that this is an area that needs
+researching more. Ways to get a better understanding of how well ML models
+perform at predicting extreme weather events are discussed.
+",2022-07-15T10:38:52Z,http://arxiv.org/abs/2207.07390v2
+"Analyzing Multispectral Satellite Imagery of South American Wildfires
+  Using Deep Learning",Christopher Sun,N/A,ArXiv,2022,N/A,N/A,2022-01-19T02:45:01Z,N/A,ArXiv,"  Since frequent severe droughts are lengthening the dry season in the Amazon
+Rainforest, it is important to detect wildfires promptly and forecast possible
+spread for effective suppression response. Current wildfire detection models
+are not versatile enough for the low-technology conditions of South American
+hot spots. This deep learning study first trains a Fully Convolutional Neural
+Network on Landsat 8 images of Ecuador and the Galapagos, using Green and
+Short-wave Infrared bands to predict pixel-level binary fire masks. This model
+achieves a 0.962 validation F2 score and a 0.932 F2 score on test data from
+Guyana and Suriname. Afterward, image segmentation is conducted on the Cirrus
+band using K-Means Clustering to simplify continuous pixel values into three
+discrete classes representing differing degrees of cirrus cloud contamination.
+Three additional Convolutional Neural Networks are trained to conduct a
+sensitivity analysis measuring the effect of simplified features on model
+accuracy and train time. The Experimental model trained on the segmented cirrus
+images provides a statistically significant decrease in train time compared to
+the Control model trained on raw cirrus images, without compromising binary
+accuracy. This proof of concept reveals that feature engineering can improve
+the performance of wildfire detection models by lowering computational expense.
+",2022-01-19T02:45:01Z,http://arxiv.org/abs/2201.09671v3
+"Harmful algal bloom forecasting. A comparison between stream and batch
+  learning","Andres Molares-Ulloa, Elisabet Rocruz, Daniel Rivero, Xosé A. Padin, Rita Nolasco, Jesús Dubert, Enrique Fernandez-Blanco",N/A,ArXiv,2024,N/A,N/A,2024-02-20T15:01:11Z,N/A,ArXiv,"  Diarrhetic Shellfish Poisoning (DSP) is a global health threat arising from
+shellfish contaminated with toxins produced by dinoflagellates. The condition,
+with its widespread incidence, high morbidity rate, and persistent shellfish
+toxicity, poses risks to public health and the shellfish industry. High biomass
+of toxin-producing algae such as DSP are known as Harmful Algal Blooms (HABs).
+Monitoring and forecasting systems are crucial for mitigating HABs impact.
+Predicting harmful algal blooms involves a time-series-based problem with a
+strong historical seasonal component, however, recent anomalies due to changes
+in meteorological and oceanographic events have been observed. Stream Learning
+stands out as one of the most promising approaches for addressing
+time-series-based problems with concept drifts. However, its efficacy in
+predicting HABs remains unproven and needs to be tested in comparison with
+Batch Learning. Historical data availability is a critical point in developing
+predictive systems. In oceanography, the available data collection can have
+some constrains and limitations, which has led to exploring new tools to obtain
+more exhaustive time series. In this study, a machine learning workflow for
+predicting the number of cells of a toxic dinoflagellate, Dinophysis acuminata,
+was developed with several key advancements. Seven machine learning algorithms
+were compared within two learning paradigms. Notably, the output data from
+CROCO, the ocean hydrodynamic model, was employed as the primary dataset,
+palliating the limitation of time-continuous historical data. This study
+highlights the value of models interpretability, fair models comparison
+methodology, and the incorporation of Stream Learning models. The model DoME,
+with an average R2 of 0.77 in the 3-day-ahead prediction, emerged as the most
+effective and interpretable predictor, outperforming the other algorithms.
+",2024-02-20T15:01:11Z,http://arxiv.org/abs/2402.13304v1
+Fourier Neural Operator for Plasma Modelling,"Vignesh Gopakumar, Stanislas Pamela, Lorenzo Zanisi, Zongyi Li, Anima Anandkumar, MAST Team",N/A,ArXiv,2023,N/A,N/A,2023-02-13T17:35:31Z,N/A,ArXiv,"  Predicting plasma evolution within a Tokamak is crucial to building a
+sustainable fusion reactor. Whether in the simulation space or within the
+experimental domain, the capability to forecast the spatio-temporal evolution
+of plasma field variables rapidly and accurately could improve active control
+methods on current tokamak devices and future fusion reactors. In this work, we
+demonstrate the utility of using Fourier Neural Operator (FNO) to model the
+plasma evolution in simulations and experiments. Our work shows that the FNO is
+capable of predicting magnetohydrodynamic models governing the plasma dynamics,
+6 orders of magnitude faster than the traditional numerical solver, while
+maintaining considerable accuracy (NMSE $\sim 10^{-5})$. Our work also
+benchmarks the performance of the FNO against other standard surrogate models
+such as Conv-LSTM and U-Net and demonstrate that the FNO takes significantly
+less time to train, requires less parameters and outperforms other models. We
+extend the FNO approach to model the plasma evolution observed by the cameras
+positioned within the MAST spherical tokamak. We illustrate its capability in
+forecasting the formation of filaments within the plasma as well as the heat
+deposits. The FNO deployed to model the camera is capable of forecasting the
+full length of the plasma shot within half the time of the shot duration.
+",2023-02-13T17:35:31Z,http://arxiv.org/abs/2302.06542v1
+TimeMixer: Decomposable Multiscale Mixing for Time Series Forecasting,"Shiyu Wang, Haixu Wu, Xiaoming Shi, Tengge Hu, Huakun Luo, Lintao Ma, James Y. Zhang, Jun Zhou",N/A,ArXiv,2024,N/A,N/A,2024-05-23T14:27:07Z,N/A,ArXiv,"  Time series forecasting is widely used in extensive applications, such as
+traffic planning and weather forecasting. However, real-world time series
+usually present intricate temporal variations, making forecasting extremely
+challenging. Going beyond the mainstream paradigms of plain decomposition and
+multiperiodicity analysis, we analyze temporal variations in a novel view of
+multiscale-mixing, which is based on an intuitive but important observation
+that time series present distinct patterns in different sampling scales. The
+microscopic and the macroscopic information are reflected in fine and coarse
+scales respectively, and thereby complex variations can be inherently
+disentangled. Based on this observation, we propose TimeMixer as a fully
+MLP-based architecture with Past-Decomposable-Mixing (PDM) and
+Future-Multipredictor-Mixing (FMM) blocks to take full advantage of
+disentangled multiscale series in both past extraction and future prediction
+phases. Concretely, PDM applies the decomposition to multiscale series and
+further mixes the decomposed seasonal and trend components in fine-to-coarse
+and coarse-to-fine directions separately, which successively aggregates the
+microscopic seasonal and macroscopic trend information. FMM further ensembles
+multiple predictors to utilize complementary forecasting capabilities in
+multiscale observations. Consequently, TimeMixer is able to achieve consistent
+state-of-the-art performances in both long-term and short-term forecasting
+tasks with favorable run-time efficiency.
+",2024-05-23T14:27:07Z,http://arxiv.org/abs/2405.14616v1
+"Identifying probabilistic weather regimes targeted to a local-scale
+  impact variable","Fiona Raphaela Spuler, Marlene Kretschmer, Yevgeniya Kovalchuk, Magdalena Alonso Balmaseda, Theodore G. Shepherd",N/A,ArXiv,2024,N/A,N/A,2024-02-23T15:27:23Z,N/A,ArXiv,"  Weather regimes are recurrent and persistent large-scale atmospheric
+circulation patterns that modulate the occurrence of local impact variables
+such as extreme precipitation. In their capacity as mediators between
+long-range teleconnections and these local extremes, they have shown potential
+for improving sub-seasonal forecasting as well as long-term climate
+projections. However, existing methods for identifying weather regimes are not
+designed to capture the physical processes relevant to the impact variable in
+question while still representing the full atmospheric phase space. This paper
+introduces a novel probabilistic machine learning method, RMM-VAE, for
+identifying weather regimes targeted to a local-scale impact variable. Based on
+a variational autoencoder architecture, the method combines non-linear
+dimensionality reduction with a prediction task and probabilistic clustering in
+a coherent architecture. The new method is applied to identify circulation
+patterns over the Mediterranean region targeted to precipitation over Morocco
+and compared to three existing approaches, two established linear methods and
+another machine learning approach. The RMM-VAE method identifies regimes that
+are more predictive of the target variable compared to the two linear methods,
+and more robust and persistent compared to the alternative machine learning
+method, while also improving the reconstruction of the input space. The results
+demonstrate the potential benefit of the new method for use in various climate
+applications such as sub-seasonal forecasting, while also highlighting the
+trade-offs involved in targeted clustering.
+",2024-02-23T15:27:23Z,http://arxiv.org/abs/2402.15379v2
+Deep Particulate Matter Forecasting Model Using Correntropy-Induced Loss,"Jongsu Kim, Changhoon Lee",N/A,ArXiv,2021,N/A,N/A,2021-06-06T05:17:24Z,N/A,ArXiv,"  Forecasting the particulate matter (PM) concentration in South Korea has
+become urgently necessary owing to its strong negative impact on human life. In
+most statistical or machine learning methods, independent and identically
+distributed data, for example, a Gaussian distribution, are assumed; however,
+time series such as air pollution and weather data do not meet this assumption.
+In this study, the maximum correntropy criterion for regression (MCCR) loss is
+used in an analysis of the statistical characteristics of air pollution and
+weather data. Rigorous seasonality adjustment of the air pollution and weather
+data was performed because of their complex seasonality patterns and the
+heavy-tailed distribution of data even after deseasonalization. The MCCR loss
+was applied to multiple models including conventional statistical models and
+state-of-the-art machine learning models. The results show that the MCCR loss
+is more appropriate than the conventional mean squared error loss for
+forecasting extreme values.
+",2021-06-06T05:17:24Z,http://arxiv.org/abs/2106.03032v2
+Recurrent Neural Networks for Modelling Gross Primary Production,"David Montero, Miguel D. Mahecha, Francesco Martinuzzi, César Aybar, Anne Klosterhalfen, Alexander Knohl, Franziska Koebsch, Jesús Anaya, Sebastian Wieneke",N/A,ArXiv,2024,N/A,N/A,2024-04-19T09:46:45Z,N/A,ArXiv,"  Accurate quantification of Gross Primary Production (GPP) is crucial for
+understanding terrestrial carbon dynamics. It represents the largest
+atmosphere-to-land CO$_2$ flux, especially significant for forests. Eddy
+Covariance (EC) measurements are widely used for ecosystem-scale GPP
+quantification but are globally sparse. In areas lacking local EC measurements,
+remote sensing (RS) data are typically utilised to estimate GPP after
+statistically relating them to in-situ data. Deep learning offers novel
+perspectives, and the potential of recurrent neural network architectures for
+estimating daily GPP remains underexplored. This study presents a comparative
+analysis of three architectures: Recurrent Neural Networks (RNNs), Gated
+Recurrent Units (GRUs), and Long-Short Term Memory (LSTMs). Our findings reveal
+comparable performance across all models for full-year and growing season
+predictions. Notably, LSTMs outperform in predicting climate-induced GPP
+extremes. Furthermore, our analysis highlights the importance of incorporating
+radiation and RS inputs (optical, temperature, and radar) for accurate GPP
+predictions, particularly during climate extremes.
+",2024-04-19T09:46:45Z,http://arxiv.org/abs/2404.12745v1
+"El Nino Southern Oscillation and Atlantic Multidecadal Oscillation
+  Impact on Hurricanes North Atlantic Basin",Suchit Basineni,N/A,ArXiv,2024,N/A,N/A,2024-10-05T21:54:27Z,N/A,ArXiv,"  Tropical cyclones (TCs), including hurricanes and typhoons, cause significant
+property damage and result in fatalities, making it crucial to understand the
+factors driving extreme TCs. The El Nino Southern Oscillation (ENSO) influences
+TC formation through tropospheric vorticity, wind shear, and atmospheric
+circulations. Apart from atmospheric changes, oceans influence activity through
+sea surface temperatures (SSTs) and deep ocean heat content. These Atlantic
+SSTs determine the Atlantic Multidecadal Oscillation (AMO), which indicates SST
+variability in the Atlantic. This research focuses on ENSO, AMO, and SSTs
+impact on the strength and frequency of TCs in the North Atlantic Basin. AMO
+and SST anomalies are increasing at an alarming rate, but it remains unclear
+how their dynamics will influence future TC behavior. I used observational
+cyclone track data from 1950 to 2023, the Oceanic Nino Index (ONI), and NOAAs
+Extended Reconstructed SST V5 (ERSST). I found that Increasing SSTs over the
+past decade indicate stronger TCs, while warm phase AMO periods correspond with
+higher TC frequency. Meanwhile, a greater frequency of landfalling TCs can be
+attributed to La Nina or ENSO-neutral, with El Nino decreasing the frequency of
+landfalling TCs. Such relationships suggest that as the seasonal predictability
+of ENSO and SSTs improve, seasonal TC forecasts may improve.
+",2024-10-05T21:54:27Z,http://arxiv.org/abs/2410.05329v1
+"Revealing recurrent regimes of mid-latitude atmospheric variability
+  using novel machine learning method","Dmitry Mukhin, Abdel Hannachi, Tobias Braun, Norbert Marwan",N/A,ArXiv,2024,N/A,N/A,2024-01-18T15:43:19Z,N/A,ArXiv,"  The low frequency variability of the extratropical atmosphere involves
+hemispheric-scale recurring, often persistent, states known as teleconnection
+patterns or regimes, which can have profound impact on predictability on
+intra-seasonal and longer timescales. However, reliable data-driven
+identification and dynamical representation of such states are still
+challenging problems in modeling dynamics of the atmosphere. We present a new
+method, which allows both to detect recurring regimes of atmospheric
+variability, and to obtain dynamical variables serving as an embedding for
+these regimes. The method combines two approaches from nonlinear data analysis:
+partitioning a network of recurrent states with studying its properties by the
+recurrence quantification analysis and the kernel principal component analysis.
+We apply the method to study teleconnection patterns in a quasi-geostrophical
+model of atmospheric circulation over the extratropical hemisphere as well as
+to reanalysis data of geopotential height anomalies in the mid-latitudes of the
+Northern Hemisphere atmosphere in the winter seasons from 1981 to the present.
+It is shown that the detected regimes as well as the obtained set of dynamical
+variables explain large-scale weather patterns, which are associated, in
+particular, with severe winters over Eurasia and North America. The method
+presented opens prospects for improving empirical modeling and long-term
+forecasting of large-scale atmospheric circulation regimes.
+",2024-01-18T15:43:19Z,http://arxiv.org/abs/2401.10073v1
+"Coupling Machine Learning and Crop Modeling Improves Crop Yield
+  Prediction in the US Corn Belt","Mohsen Shahhosseini, Guiping Hu, Sotirios V. Archontoulis, Isaiah Huber",N/A,ArXiv,2020,N/A,N/A,2020-07-28T16:22:44Z,N/A,ArXiv,"  This study investigates whether coupling crop modeling and machine learning
+(ML) improves corn yield predictions in the US Corn Belt. The main objectives
+are to explore whether a hybrid approach (crop modeling + ML) would result in
+better predictions, investigate which combinations of hybrid models provide the
+most accurate predictions, and determine the features from the crop modeling
+that are most effective to be integrated with ML for corn yield prediction.
+Five ML models (linear regression, LASSO, LightGBM, random forest, and XGBoost)
+and six ensemble models have been designed to address the research question.
+The results suggest that adding simulation crop model variables (APSIM) as
+input features to ML models can decrease yield prediction root mean squared
+error (RMSE) from 7 to 20%. Furthermore, we investigated partial inclusion of
+APSIM features in the ML prediction models and we found soil moisture related
+APSIM variables are most influential on the ML predictions followed by
+crop-related and phenology-related variables. Finally, based on feature
+importance measure, it has been observed that simulated APSIM average drought
+stress and average water table depth during the growing season are the most
+important APSIM inputs to ML. This result indicates that weather information
+alone is not sufficient and ML models need more hydrological inputs to make
+improved yield predictions.
+",2020-07-28T16:22:44Z,http://arxiv.org/abs/2008.04060v2
+Virtual-to-Real-World Transfer Learning for Robots on Wilderness Trails,"Michael L. Iuzzolino, Michael E. Walker, Daniel Szafir",N/A,ArXiv,2019,N/A,N/A,2019-01-17T03:11:58Z,N/A,ArXiv,"  Robots hold promise in many scenarios involving outdoor use, such as
+search-and-rescue, wildlife management, and collecting data to improve
+environment, climate, and weather forecasting. However, autonomous navigation
+of outdoor trails remains a challenging problem. Recent work has sought to
+address this issue using deep learning. Although this approach has achieved
+state-of-the-art results, the deep learning paradigm may be limited due to a
+reliance on large amounts of annotated training data. Collecting and curating
+training datasets may not be feasible or practical in many situations,
+especially as trail conditions may change due to seasonal weather variations,
+storms, and natural erosion. In this paper, we explore an approach to address
+this issue through virtual-to-real-world transfer learning using a variety of
+deep learning models trained to classify the direction of a trail in an image.
+Our approach utilizes synthetic data gathered from virtual environments for
+model training, bypassing the need to collect a large amount of real images of
+the outdoors. We validate our approach in three main ways. First, we
+demonstrate that our models achieve classification accuracies upwards of 95% on
+our synthetic data set. Next, we utilize our classification models in the
+control system of a simulated robot to demonstrate feasibility. Finally, we
+evaluate our models on real-world trail data and demonstrate the potential of
+virtual-to-real-world transfer learning.
+",2019-01-17T03:11:58Z,http://arxiv.org/abs/1901.05599v1
+"Spatio-temporal methods for estimating subsurface ocean thermal response
+  to tropical cyclones","Addison J. Hu, Mikael Kuusela, Ann B. Lee, Donata Giglio, Kimberly M. Wood",N/A,ArXiv,2020,N/A,N/A,2020-12-30T12:35:32Z,N/A,ArXiv,"  Tropical cyclones (TCs), driven by heat exchange between the air and sea,
+pose a substantial risk to many communities around the world. Accurate
+characterization of the subsurface ocean thermal response to TC passage is
+crucial for accurate TC intensity forecasts and for an understanding of the
+role that TCs play in the global climate system. However, that characterization
+is complicated by the high-noise ocean environment, correlations inherent in
+spatio-temporal data, relative scarcity of in situ observations, and the
+entanglement of the TC-induced signal with seasonal signals. We present a
+general methodological framework that addresses these difficulties, integrating
+existing techniques in seasonal mean field estimation, Gaussian process
+modeling, and nonparametric regression into an ANOVA decomposition model.
+Importantly, we improve upon past work by properly handling seasonality,
+providing rigorous uncertainty quantification, and treating time as a
+continuous variable, rather than producing estimates that are binned in time.
+This ANOVA model is estimated using in situ subsurface temperature profiles
+from the Argo fleet of autonomous floats through a multi-step procedure, which
+(1) characterizes the upper ocean seasonal shift during the TC season; (2)
+models the variability in the temperature observations; (3) fits a thin plate
+spline using the variability estimates to account for heteroskedasticity and
+correlation between the observations. This spline fit reveals the ocean thermal
+response to TC passage. Through this framework, we obtain new scientific
+insights into the interaction between TCs and the ocean on a global scale,
+including a three-dimensional characterization of the near-surface and
+subsurface cooling along the TC storm track and the mixing-induced subsurface
+warming on the track's right side.
+",2020-12-30T12:35:32Z,http://arxiv.org/abs/2012.15130v5
+"Deep Learning Models for River Classification at Sub-Meter Resolutions
+  from Multispectral and Panchromatic Commercial Satellite Imagery","Joachim Moortgat, Ziwei Li, Michael Durand, Ian Howat, Bidhyananda Yadav, Chunli Dai",N/A,ArXiv,2022,N/A,N/A,2022-12-27T20:56:34Z,N/A,ArXiv,"  Remote sensing of the Earth's surface water is critical in a wide range of
+environmental studies, from evaluating the societal impacts of seasonal
+droughts and floods to the large-scale implications of climate change.
+Consequently, a large literature exists on the classification of water from
+satellite imagery. Yet, previous methods have been limited by 1) the spatial
+resolution of public satellite imagery, 2) classification schemes that operate
+at the pixel level, and 3) the need for multiple spectral bands. We advance the
+state-of-the-art by 1) using commercial imagery with panchromatic and
+multispectral resolutions of 30 cm and 1.2 m, respectively, 2) developing
+multiple fully convolutional neural networks (FCN) that can learn the
+morphological features of water bodies in addition to their spectral
+properties, and 3) FCN that can classify water even from panchromatic imagery.
+This study focuses on rivers in the Arctic, using images from the Quickbird,
+WorldView, and GeoEye satellites. Because no training data are available at
+such high resolutions, we construct those manually. First, we use the RGB, and
+NIR bands of the 8-band multispectral sensors. Those trained models all achieve
+excellent precision and recall over 90% on validation data, aided by on-the-fly
+preprocessing of the training data specific to satellite imagery. In a novel
+approach, we then use results from the multispectral model to generate training
+data for FCN that only require panchromatic imagery, of which considerably more
+is available. Despite the smaller feature space, these models still achieve a
+precision and recall of over 85%. We provide our open-source codes and trained
+model parameters to the remote sensing community, which paves the way to a wide
+range of environmental hydrology applications at vastly superior accuracies and
+2 orders of magnitude higher spatial resolution than previously possible.
+",2022-12-27T20:56:34Z,http://arxiv.org/abs/2212.13613v1
+LSTM-based Encoder-Decoder for Multi-sensor Anomaly Detection,"Pankaj Malhotra, Anusha Ramakrishnan, Gaurangi Anand, Lovekesh Vig, Puneet Agarwal, Gautam Shroff",N/A,ArXiv,2016,N/A,N/A,2016-07-01T08:25:48Z,N/A,ArXiv,"  Mechanical devices such as engines, vehicles, aircrafts, etc., are typically
+instrumented with numerous sensors to capture the behavior and health of the
+machine. However, there are often external factors or variables which are not
+captured by sensors leading to time-series which are inherently unpredictable.
+For instance, manual controls and/or unmonitored environmental conditions or
+load may lead to inherently unpredictable time-series. Detecting anomalies in
+such scenarios becomes challenging using standard approaches based on
+mathematical models that rely on stationarity, or prediction models that
+utilize prediction errors to detect anomalies. We propose a Long Short Term
+Memory Networks based Encoder-Decoder scheme for Anomaly Detection (EncDec-AD)
+that learns to reconstruct 'normal' time-series behavior, and thereafter uses
+reconstruction error to detect anomalies. We experiment with three publicly
+available quasi predictable time-series datasets: power demand, space shuttle,
+and ECG, and two real-world engine datasets with both predictive and
+unpredictable behavior. We show that EncDec-AD is robust and can detect
+anomalies from predictable, unpredictable, periodic, aperiodic, and
+quasi-periodic time-series. Further, we show that EncDec-AD is able to detect
+anomalies from short time-series (length as small as 30) as well as long
+time-series (length as large as 500).
+",2016-07-01T08:25:48Z,http://arxiv.org/abs/1607.00148v2
+"ExtremeWeather: A large-scale climate dataset for semi-supervised
+  detection, localization, and understanding of extreme weather events","Evan Racah, Christopher Beckham, Tegan Maharaj, Samira Ebrahimi Kahou,  Prabhat, Christopher Pal",N/A,ArXiv,2016,N/A,N/A,2016-12-07T01:46:09Z,N/A,ArXiv,"  Then detection and identification of extreme weather events in large-scale
+climate simulations is an important problem for risk management, informing
+governmental policy decisions and advancing our basic understanding of the
+climate system. Recent work has shown that fully supervised convolutional
+neural networks (CNNs) can yield acceptable accuracy for classifying well-known
+types of extreme weather events when large amounts of labeled data are
+available. However, many different types of spatially localized climate
+patterns are of interest including hurricanes, extra-tropical cyclones, weather
+fronts, and blocking events among others. Existing labeled data for these
+patterns can be incomplete in various ways, such as covering only certain years
+or geographic areas and having false negatives. This type of climate data
+therefore poses a number of interesting machine learning challenges. We present
+a multichannel spatiotemporal CNN architecture for semi-supervised bounding box
+prediction and exploratory data analysis. We demonstrate that our approach is
+able to leverage temporal information and unlabeled data to improve the
+localization of extreme weather events. Further, we explore the representations
+learned by our model in order to better understand this important data. We
+present a dataset, ExtremeWeather, to encourage machine learning research in
+this area and to help facilitate further work in understanding and mitigating
+the effects of climate change. The dataset is available at
+extremeweatherdataset.github.io and the code is available at
+https://github.com/eracah/hur-detect.
+",2016-12-07T01:46:09Z,http://arxiv.org/abs/1612.02095v2
+"A Framework for Accurate Drought Forecasting System Using
+  Semantics-Based Data Integration Middleware","A. K. Akanbi, M. Masinde",N/A,ArXiv,2017,N/A,N/A,2017-06-20T13:21:50Z,N/A,ArXiv,"  Technological advancement in Wireless Sensor Networks (WSN) has made it
+become an invaluable component of a reliable environmental monitoring system;
+they form the digital skin' through which to 'sense' and collect the context of
+the surroundings and provides information on the process leading to complex
+events such as drought. However, these environmental properties are measured by
+various heterogeneous sensors of different modalities in distributed locations
+making up the WSN, using different abstruse terms and vocabulary in most cases
+to denote the same observed property, causing data heterogeneity. Adding
+semantics and understanding the relationships that exist between the observed
+properties, and augmenting it with local indigenous knowledge is necessary for
+an accurate drought forecasting system. In this paper, we propose the framework
+for the semantic representation of sensor data and integration with indigenous
+knowledge on drought using a middleware for an efficient drought forecasting
+system.
+",2017-06-20T13:21:50Z,http://arxiv.org/abs/1706.07294v1
+"Development and Evaluation of Ensemble Learning-based Environmental
+  Methane Detection and Intensity Prediction Models","Reek Majumder, Jacquan Pollard, M Sabbir Salek, David Werth, Gurcan Comert, Adrian Gale, Sakib Mahmud Khan, Samuel Darko, Mashrur Chowdhury",N/A,ArXiv,2023,N/A,N/A,2023-12-18T01:52:59Z,N/A,ArXiv,"  The environmental impacts of global warming driven by methane (CH4) emissions
+have catalyzed significant research initiatives in developing novel
+technologies that enable proactive and rapid detection of CH4. Several
+data-driven machine learning (ML) models were tested to determine how well they
+identified fugitive CH4 and its related intensity in the affected areas.
+Various meteorological characteristics, including wind speed, temperature,
+pressure, relative humidity, water vapor, and heat flux, were included in the
+simulation. We used the ensemble learning method to determine the
+best-performing weighted ensemble ML models built upon several weaker
+lower-layer ML models to (i) detect the presence of CH4 as a classification
+problem and (ii) predict the intensity of CH4 as a regression problem.
+",2023-12-18T01:52:59Z,http://arxiv.org/abs/2312.10879v1
+"Efficient Novelty Detection Methods for Early Warning of Potential Fatal
+  Diseases","Sèdjro Salomon Hotegni, Ernest Fokoué",N/A,ArXiv,2022,N/A,N/A,2022-08-06T19:04:51Z,N/A,ArXiv,"  Fatal diseases, as Critical Health Episodes (CHEs), represent real dangers
+for patients hospitalized in Intensive Care Units. These episodes can lead to
+irreversible organ damage and death. Nevertheless, diagnosing them in time
+would greatly reduce their inconvenience. This study therefore focused on
+building a highly effective early warning system for CHEs such as Acute
+Hypotensive Episodes and Tachycardia Episodes. To facilitate the precocity of
+the prediction, a gap of one hour was considered between the observation
+periods (Observation Windows) and the periods during which a critical event can
+occur (Target Windows). The MIMIC II dataset was used to evaluate the
+performance of the proposed system. This system first includes extracting
+additional features using three different modes. Then, the feature selection
+process allowing the selection of the most relevant features was performed
+using the Mutual Information Gain feature importance. Finally, the
+high-performance predictive model LightGBM was used to perform episode
+classification. This approach called MIG-LightGBM was evaluated using five
+different metrics: Event Recall (ER), Reduced Precision (RP), average
+Anticipation Time (aveAT), average False Alarms (aveFA), and Event F1-score
+(EF1-score). A method is therefore considered highly efficient for the early
+prediction of CHEs if it exhibits not only a large aveAT but also a large
+EF1-score and a low aveFA. Compared to systems using Extreme Gradient Boosting,
+Support Vector Classification or Naive Bayes as a predictive model, the
+proposed system was found to be highly dominant. It also confirmed its
+superiority over the Layered Learning approach.
+",2022-08-06T19:04:51Z,http://arxiv.org/abs/2208.04732v1
+Estimating Buildings' Parameters over Time Including Prior Knowledge,"Nilavra Pathak, James Foulds, Nirmalya Roy, Nilanjan Banerjee, Ryan Robucci",N/A,ArXiv,2019,N/A,N/A,2019-01-09T03:37:32Z,N/A,ArXiv,"  Modeling buildings' heat dynamics is a complex process which depends on
+various factors including weather, building thermal capacity, insulation
+preservation, and residents' behavior. Gray-box models offer a causal inference
+of those dynamics expressed in few parameters specific to built environments.
+These parameters can provide compelling insights into the characteristics of
+building artifacts and have various applications such as forecasting HVAC
+usage, indoor temperature control monitoring of built environments, etc. In
+this paper, we present a systematic study of modeling buildings' thermal
+characteristics and thus derive the parameters of built conditions with a
+Bayesian approach. We build a Bayesian state-space model that can adapt and
+incorporate buildings' thermal equations and propose a generalized solution
+that can easily adapt prior knowledge regarding the parameters. We show that a
+faster approximate approach using variational inference for parameter
+estimation can provide similar parameters as that of a more time-consuming
+Markov Chain Monte Carlo (MCMC) approach. We perform extensive evaluations on
+two datasets to understand the generative process and show that the Bayesian
+approach is more interpretable. We further study the effects of prior selection
+for the model parameters and transfer learning, where we learn parameters from
+one season and use them to fit the model in the other. We perform extensive
+evaluations on controlled and real data traces to enumerate buildings'
+parameter within a 95% credible interval.
+",2019-01-09T03:37:32Z,http://arxiv.org/abs/1901.07469v3
+Improved Sensitivity of Base Layer on the Performance of Rigid Pavement,"Sajib Saha, Fan Gu, Xue Luo, Robert L. Lytton",N/A,ArXiv,2021,N/A,N/A,2021-01-20T23:43:41Z,N/A,ArXiv,"  The performance of rigid pavement is greatly affected by the properties of
+base/subbase as well as subgrade layer. However, the performance predicted by
+the AASHTOWare Pavement ME design shows low sensitivity to the properties of
+base and subgrade layers. To improve the sensitivity and better reflect the
+influence of unbound layers a new set of improved models i.e., resilient
+modulus (MR) and modulus of subgrade reaction (k-value) are adopted in this
+study. An Artificial Neural Network (ANN) model is developed to predict the
+modified k-value based on finite element (FE) analysis. The training and
+validation datasets in the ANN model consist of 27000 simulation cases with
+different combinations of pavement layer thickness, layer modulus and slab-base
+interface bond ratio. To examine the sensitivity of modified MR and k-values on
+pavement response, eight pavement sections data are collected from the
+Long-Term Pavement performance (LTPP) database and modeled by using the FE
+software ISLAB2000. The computational results indicate that the modified MR
+values have higher sensitivity to water content in base layer on critical
+stress and deflection response of rigid pavements compared to the results using
+the Pavement ME design model. It is also observed that the k-values using ANN
+model has the capability of predicting critical pavement response at any
+partially bonded conditions whereas the Pavement ME design model can only
+calculate at two extreme bonding conditions (i.e., fully bonding and no
+bonding).
+",2021-01-20T23:43:41Z,http://arxiv.org/abs/2101.09167v1
+"An Applied Deep Learning Approach for Estimating Soybean Relative
+  Maturity from UAV Imagery to Aid Plant Breeding Decisions","Saba Moeinizade, Hieu Pham, Ye Han, Austin Dobbels, Guiping Hu",N/A,ArXiv,2021,N/A,N/A,2021-08-02T14:53:58Z,N/A,ArXiv,"  For a global breeding organization, identifying the next generation of
+superior crops is vital for its success. Recognizing new genetic varieties
+requires years of in-field testing to gather data about the crop's yield, pest
+resistance, heat resistance, etc. At the conclusion of the growing season,
+organizations need to determine which varieties will be advanced to the next
+growing season (or sold to farmers) and which ones will be discarded from the
+candidate pool. Specifically for soybeans, identifying their relative maturity
+is a vital piece of information used for advancement decisions. However, this
+trait needs to be physically observed, and there are resource limitations
+(time, money, etc.) that bottleneck the data collection process. To combat
+this, breeding organizations are moving toward advanced image capturing
+devices. In this paper, we develop a robust and automatic approach for
+estimating the relative maturity of soybeans using a time series of UAV images.
+An end-to-end hybrid model combining Convolutional Neural Networks (CNN) and
+Long Short-Term Memory (LSTM) is proposed to extract features and capture the
+sequential behavior of time series data. The proposed deep learning model was
+tested on six different environments across the United States. Results suggest
+the effectiveness of our proposed CNN-LSTM model compared to the local
+regression method. Furthermore, we demonstrate how this newfound information
+can be used to aid in plant breeding advancement decisions.
+",2021-08-02T14:53:58Z,http://arxiv.org/abs/2108.00952v1
+"DeepQC: A Deep Learning System for Automatic Quality Control of In-situ
+  Soil Moisture Sensor Time Series Data","Lahari Bandaru, Bharat C Irigireddy, Brian Davis",N/A,ArXiv,2023,N/A,N/A,2023-11-12T04:58:20Z,N/A,ArXiv,"  Amidst changing climate, real-time soil moisture monitoring is vital for the
+development of in-season decision support tools to help farmers manage weather
+related risks. Precision Sustainable Agriculture (PSA) recently established a
+real-time soil moisture monitoring network across the central, Midwest, and
+eastern U.S., but field-scale sensor observations often come with data gaps and
+anomalies. To maintain the data quality needed for development of decision
+tools, a quality control system is necessary. The International Soil Moisture
+Network (ISMN) introduced the Flagit module for anomaly detection in soil
+moisture observations. However, under certain conditions, Flagit's quality
+control approaches may underperform in identifying anomalies. Recently deep
+learning methods have been successfully applied to detect anomalies in time
+series data in various disciplines. However, their use in agriculture has not
+been yet investigated. This study focuses on developing a Bi-directional Long
+Short-Term Memory (LSTM) model, referred to as DeepQC, to identify anomalies in
+soil moisture data. Manual flagged PSA observations were used for training,
+validation, and testing the model, following an 80:10:10 split. The study then
+compared the DeepQC and Flagit based estimates to assess their relative
+performance. Flagit corrected flagged 95.5% of the corrected observations and
+50.3% of the anomaly observations, indicating its limitations in identifying
+anomalies. On the other hand, the DeepQC correctly flagged 99.7% of the correct
+observations and 95.6% of the anomalies in significantly less time,
+demonstrating its superiority over Flagit approach. Importantly, DeepQC's
+performance remained consistent regardless of the number of anomalies. Given
+the promising results obtained with the DeepQC, future studies will focus on
+implementing this model on national and global soil moisture networks.
+",2023-11-12T04:58:20Z,http://arxiv.org/abs/2311.06735v1
+"Resilient In-Season Crop Type Classification in Multispectral Satellite
+  Observations using Growth Stage Normalization","Hannah Kerner, Ritvik Sahajpal, Sergii Skakun, Inbal Becker-Reshef, Brian Barker, Mehdi Hosseini, Estefania Puricelli, Patrick Gray",N/A,ArXiv,2020,N/A,N/A,2020-09-21T21:55:32Z,N/A,ArXiv,"  Crop type classification using satellite observations is an important tool
+for providing insights about planted area and enabling estimates of crop
+condition and yield, especially within the growing season when uncertainties
+around these quantities are highest. As the climate changes and extreme weather
+events become more frequent, these methods must be resilient to changes in
+domain shifts that may occur, for example, due to shifts in planting timelines.
+In this work, we present an approach for within-season crop type classification
+using moderate spatial resolution (30 m) satellite data that addresses domain
+shift related to planting timelines by normalizing inputs by crop growth stage.
+We use a neural network leveraging both convolutional and recurrent layers to
+predict if a pixel contains corn, soybeans, or another crop or land cover type.
+We evaluated this method for the 2019 growing season in the midwestern US,
+during which planting was delayed by as much as 1-2 months due to extreme
+weather that caused record flooding. We show that our approach using growth
+stage-normalized time series outperforms fixed-date time series, and achieves
+overall classification accuracy of 85.4% prior to harvest (September-November)
+and 82.8% by mid-season (July-September).
+",2020-09-21T21:55:32Z,http://arxiv.org/abs/2009.10189v1
+"TRU-NET: A Deep Learning Approach to High Resolution Prediction of
+  Rainfall","Rilwan Adewoyin, Peter Dueben, Peter Watson, Yulan He, Ritabrata Dutta",N/A,ArXiv,2020,N/A,N/A,2020-08-20T17:27:59Z,N/A,ArXiv,"  Climate models (CM) are used to evaluate the impact of climate change on the
+risk of floods and strong precipitation events. However, these numerical
+simulators have difficulties representing precipitation events accurately,
+mainly due to limited spatial resolution when simulating multi-scale dynamics
+in the atmosphere. To improve the prediction of high resolution precipitation
+we apply a Deep Learning (DL) approach using an input of CM simulations of the
+model fields (weather variables) that are more predictable than local
+precipitation. To this end, we present TRU-NET (Temporal Recurrent U-Net), an
+encoder-decoder model featuring a novel 2D cross attention mechanism between
+contiguous convolutional-recurrent layers to effectively model multi-scale
+spatio-temporal weather processes. We use a conditional-continuous loss
+function to capture the zero-skewed %extreme event patterns of rainfall.
+Experiments show that our model consistently attains lower RMSE and MAE scores
+than a DL model prevalent in short term precipitation prediction and improves
+upon the rainfall predictions of a state-of-the-art dynamical weather model.
+Moreover, by evaluating the performance of our model under various, training
+and testing, data formulation strategies, we show that there is enough data for
+our deep learning approach to output robust, high-quality results across
+seasons and varying regions.
+",2020-08-20T17:27:59Z,http://arxiv.org/abs/2008.09090v2
+Adaptive Thresholding Heuristic for KPI Anomaly Detection,"Ebenezer R. H. P. Isaac, Akshat Sharma",N/A,ArXiv,2023,N/A,N/A,2023-08-21T06:45:28Z,N/A,ArXiv,"  A plethora of outlier detectors have been explored in the time series domain,
+however, in a business sense, not all outliers are anomalies of interest.
+Existing anomaly detection solutions are confined to certain outlier detectors
+limiting their applicability to broader anomaly detection use cases. Network
+KPIs (Key Performance Indicators) tend to exhibit stochastic behaviour
+producing statistical outliers, most of which do not adversely affect business
+operations. Thus, a heuristic is required to capture the business definition of
+an anomaly for time series KPI. This article proposes an Adaptive Thresholding
+Heuristic (ATH) to dynamically adjust the detection threshold based on the
+local properties of the data distribution and adapt to changes in time series
+patterns. The heuristic derives the threshold based on the expected periodicity
+and the observed proportion of anomalies minimizing false positives and
+addressing concept drift. ATH can be used in conjunction with any underlying
+seasonality decomposition method and an outlier detector that yields an outlier
+score. This method has been tested on EON1-Cell-U, a labeled KPI anomaly
+dataset produced by Ericsson, to validate our hypothesis. Experimental results
+show that ATH is computationally efficient making it scalable for near real
+time anomaly detection and flexible with multiple forecasters and outlier
+detectors.
+",2023-08-21T06:45:28Z,http://arxiv.org/abs/2308.10504v1
+"A recurrent neural network for classification of unevenly sampled
+  variable stars","Brett Naul, Joshua S. Bloom, Fernando Pérez, Stéfan van der Walt",N/A,ArXiv,2017,N/A,N/A,2017-11-28T23:17:53Z,N/A,ArXiv,"  Astronomical surveys of celestial sources produce streams of noisy time
+series measuring flux versus time (""light curves""). Unlike in many other
+physical domains, however, large (and source-specific) temporal gaps in data
+arise naturally due to intranight cadence choices as well as diurnal and
+seasonal constraints. With nightly observations of millions of variable stars
+and transients from upcoming surveys, efficient and accurate discovery and
+classification techniques on noisy, irregularly sampled data must be employed
+with minimal human-in-the-loop involvement. Machine learning for inference
+tasks on such data traditionally requires the laborious hand-coding of
+domain-specific numerical summaries of raw data (""features""). Here we present a
+novel unsupervised autoencoding recurrent neural network (RNN) that makes
+explicit use of sampling times and known heteroskedastic noise properties. When
+trained on optical variable star catalogs, this network produces supervised
+classification models that rival other best-in-class approaches. We find that
+autoencoded features learned on one time-domain survey perform nearly as well
+when applied to another survey. These networks can continue to learn from new
+unlabeled observations and may be used in other unsupervised tasks such as
+forecasting and anomaly detection.
+",2017-11-28T23:17:53Z,http://arxiv.org/abs/1711.10609v1
+"The short-term association between environmental variables and
+  mortality: evidence from Europe","Jens Robben, Katrien Antonio, Torsten Kleinow",N/A,ArXiv,2024,N/A,N/A,2024-05-28T10:07:50Z,N/A,ArXiv,"  Using fine-grained, publicly available data, this paper studies the
+short-term association between environmental factors, i.e., weather and air
+pollution characteristics, and weekly mortality rates in small geographical
+regions in Europe. Hereto, we develop a mortality modeling framework where a
+baseline model describes a region-specific, seasonal trend observed within the
+historical weekly mortality rates. Using a machine learning algorithm, we then
+explain deviations from this baseline using features constructed from
+environmental data that capture anomalies and extreme events. We illustrate our
+proposed modeling framework through a case study on more than 550 NUTS 3
+regions (Nomenclature of Territorial Units for Statistics, level 3) in 20
+European countries. Using interpretation tools, we unravel insights into which
+environmental features are most important when estimating excess or deficit
+mortality relative to the baseline and explore how these features interact.
+Moreover, we investigate harvesting effects through our constructed weekly
+mortality modeling framework. Our findings show that temperature-related
+features are most influential in explaining mortality deviations from the
+baseline over short time periods. Furthermore, we find that environmental
+features prove particularly beneficial in southern regions for explaining
+elevated levels of mortality, and we observe evidence of a harvesting effect
+related to heat waves.
+",2024-05-28T10:07:50Z,http://arxiv.org/abs/2405.18020v3
+"Seasonal Evolution of Mixed Layers in the Red Sea and the Relative
+  Contribution of Atmospheric Buoyancy and Momentum Forcing","G. Krokos, I. Cerovečki, P. Zhan, M. C. Hendershott, I. Hoteit",N/A,ArXiv,2021,N/A,N/A,2021-12-16T10:21:56Z,N/A,ArXiv,"  The seasonal and spatial evolution of mixed layers (MLs) in the Red Sea (RS)
+is analyzed for the 2001-2015 period using the results of a high resolution
+(~1km horizontal, 50 vertical layers) ocean circulation model forced by a novel
+regional high resolution (5 km) atmospheric reanalysis dataset. The simulation
+reproduces the main features of the near-surface stratification, as described
+by the available observations. The seasonal evolution of the modeled mixed
+layer depths (MLDs) in the RS is predominantly driven by atmospheric buoyancy
+forcing, especially its heat flux component. Everywhere in the basin the model
+MLs are deepest in January and February. The deepest MLDs develop in the
+northern parts of the Gulf of Aqaba and in the western parts of the north RS.
+The MLDs gradually shoal towards the south, reflecting the meridional gradient
+of wintertime surface buoyancy loss. In spring and summer, the surface ocean
+heat gain increases the stratification and the MLs are becoming shallow
+everywhere in the basin. During this season wind may have a significant local
+impact on the MLD. Particularly important are strong winds channeled by
+topography, such as in the vicinity of the Strait of Bab-Al-Mandeb and the
+straits connecting the two gulfs in the north, and lateral jets blowing through
+mountain gaps, such as the Tokar jet in the central RS. The MLD distribution
+further suggests influence by the general and mesoscale circulation. The
+complex patterns of air-sea buoyancy flux, wind forcing, and the thermohaline
+and mesoscale circulation, are all strongly imprinted on the MLD distribution.
+",2021-12-16T10:21:56Z,http://arxiv.org/abs/2112.08762v1
+"Classification of Middle Tropospheric Systems over the Arabian Sea and
+  Western India","Pradeep Kushwaha, Jai Sukhatme, Ravi S. Nanjundiah",N/A,ArXiv,2022,N/A,N/A,2022-03-08T13:06:25Z,N/A,ArXiv,"  The formation of Middle Tropospheric Cyclones (MTCs) that are responsible for
+a large portion of annual precipitation and extreme rainfall events over
+western India is studied using an unsupervised machine learning algorithm and
+cyclone tracking. Both approaches reveal four dominant weather patterns that
+lead to the genesis of these systems; specifically, re-intensification of
+westward moving synoptic systems from Bay of Bengal (Type 1, 51%), in-situ
+formation with a coexisting cyclonic system over the Bay of Bengal that
+precedes (Type 2a, 31%) or follows (Type 2b, 10%) genesis in the Arabian Sea,
+and finally in-situ genesis within a northwestward propagating cyclonic anomaly
+from the south Bay of Bengal (Type 2c, 8%). Thus, a large fraction of rainy
+middle tropospheric synoptic systems in this region form in association with
+cyclonic activity in the Bay of Bengal. The four variants identified also show
+a marked dependence on large-scale environmental features with Type 1 and Type
+2a formation primarily occurring in phases 4 and 5, and Type 2b and Type 2c in
+phases 3 and 4 of the Boreal Summer Intraseasonal Oscillation. Further, while
+in-situ formation with a Bay of Bengal cyclonic anomaly (Type 2a and 2b) mostly
+occurs in June, downstream development is more likely in the core of the
+monsoon season. Out of all categories, Type 2a is associated with the highest
+rain rate (60 mm/day) and points towards the dynamical interaction between a
+low pressure system over the Bay of Bengal and the development of MTCs over
+western India and the northeast Arabian Sea. This classification,
+identification of precursors, connection with cyclonic activity over the Bay of
+Bengal and dependence on large-scale environment provides an avenue for better
+understanding and prediction of rain-bearing MTCs over western India.
+",2022-03-08T13:06:25Z,http://arxiv.org/abs/2203.04060v1
+Stacked Residuals of Dynamic Layers for Time Series Anomaly Detection,"L. Zancato, A. Achille, G. Paolini, A. Chiuso, S. Soatto",N/A,ArXiv,2022,N/A,N/A,2022-02-25T01:50:22Z,N/A,ArXiv,"  We present an end-to-end differentiable neural network architecture to
+perform anomaly detection in multivariate time series by incorporating a
+Sequential Probability Ratio Test on the prediction residual. The architecture
+is a cascade of dynamical systems designed to separate linearly predictable
+components of the signal such as trends and seasonality, from the non-linear
+ones. The former are modeled by local Linear Dynamic Layers, and their residual
+is fed to a generic Temporal Convolutional Network that also aggregates global
+statistics from different time series as context for the local predictions of
+each one. The last layer implements the anomaly detector, which exploits the
+temporal structure of the prediction residuals to detect both isolated point
+anomalies and set-point changes. It is based on a novel application of the
+classic CUMSUM algorithm, adapted through the use of a variational
+approximation of f-divergences. The model automatically adapts to the time
+scales of the observed signals. It approximates a SARIMA model at the get-go,
+and auto-tunes to the statistics of the signal and its covariates, without the
+need for supervision, as more data is observed. The resulting system, which we
+call STRIC, outperforms both state-of-the-art robust statistical methods and
+deep neural network architectures on multiple anomaly detection benchmarks.
+",2022-02-25T01:50:22Z,http://arxiv.org/abs/2202.12457v1
+Anomaly Detection for Solder Joints Using $β$-VAE,"Furkan Ulger, Seniha Esen Yuksel, Atila Yilmaz",N/A,ArXiv,2021,N/A,N/A,2021-04-24T11:19:27Z,N/A,ArXiv,"  In the assembly process of printed circuit boards (PCB), most of the errors
+are caused by solder joints in Surface Mount Devices (SMD). In the literature,
+traditional feature extraction based methods require designing hand-crafted
+features and rely on the tiered RGB illumination to detect solder joint errors,
+whereas the supervised Convolutional Neural Network (CNN) based approaches
+require a lot of labelled abnormal samples (defective solder joints) to achieve
+high accuracy. To solve the optical inspection problem in unrestricted
+environments with no special lighting and without the existence of error-free
+reference boards, we propose a new beta-Variational Autoencoders (beta-VAE)
+architecture for anomaly detection that can work on both IC and non-IC
+components. We show that the proposed model learns disentangled representation
+of data, leading to more independent features and improved latent space
+representations. We compare the activation and gradient-based representations
+that are used to characterize anomalies; and observe the effect of different
+beta parameters on accuracy and on untwining the feature representations in
+beta-VAE. Finally, we show that anomalies on solder joints can be detected with
+high accuracy via a model trained on directly normal samples without designated
+hardware or feature engineering.
+",2021-04-24T11:19:27Z,http://arxiv.org/abs/2104.11927v2
+"Annual field-scale maps of tall and short crops at the global scale
+  using GEDI and Sentinel-2","Stefania Di Tommaso, Sherrie Wang, Vivek Vajipey, Noel Gorelick, Rob Strey, David B. Lobell",N/A,ArXiv,2022,N/A,N/A,2022-12-19T18:09:34Z,N/A,ArXiv,"  Crop type maps are critical for tracking agricultural land use and estimating
+crop production. Remote sensing has proven an efficient and reliable tool for
+creating these maps in regions with abundant ground labels for model training,
+yet these labels remain difficult to obtain in many regions and years. NASA's
+Global Ecosystem Dynamics Investigation (GEDI) spaceborne lidar instrument,
+originally designed for forest monitoring, has shown promise for distinguishing
+tall and short crops. In the current study, we leverage GEDI to develop
+wall-to-wall maps of short vs tall crops on a global scale at 10 m resolution
+for 2019-2021. Specifically, we show that (1) GEDI returns can reliably be
+classified into tall and short crops after removing shots with extreme view
+angles or topographic slope, (2) the frequency of tall crops over time can be
+used to identify months when tall crops are at their peak height, and (3) GEDI
+shots in these months can then be used to train random forest models that use
+Sentinel-2 time series to accurately predict short vs. tall crops. Independent
+reference data from around the world are then used to evaluate these GEDI-S2
+maps. We find that GEDI-S2 performed nearly as well as models trained on
+thousands of local reference training points, with accuracies of at least 87%
+and often above 90% throughout the Americas, Europe, and East Asia. Systematic
+underestimation of tall crop area was observed in regions where crops
+frequently exhibit low biomass, namely Africa and South Asia, and further work
+is needed in these systems. Although the GEDI-S2 approach only differentiates
+tall from short crops, in many landscapes this distinction goes a long way
+toward mapping the main individual crop types. The combination of GEDI and
+Sentinel-2 thus presents a very promising path towards global crop mapping with
+minimal reliance on ground data.
+",2022-12-19T18:09:34Z,http://arxiv.org/abs/2212.09681v1
+"Environmental Sensor Placement with Convolutional Gaussian Neural
+  Processes","Tom R. Andersson, Wessel P. Bruinsma, Stratis Markou, James Requeima, Alejandro Coca-Castro, Anna Vaughan, Anna-Louise Ellis, Matthew A. Lazzara, Dani Jones, J. Scott Hosking, Richard E. Turner",N/A,ArXiv,2022,N/A,N/A,2022-11-18T17:25:14Z,N/A,ArXiv,"  Environmental sensors are crucial for monitoring weather conditions and the
+impacts of climate change. However, it is challenging to place sensors in a way
+that maximises the informativeness of their measurements, particularly in
+remote regions like Antarctica. Probabilistic machine learning models can
+suggest informative sensor placements by finding sites that maximally reduce
+prediction uncertainty. Gaussian process (GP) models are widely used for this
+purpose, but they struggle with capturing complex non-stationary behaviour and
+scaling to large datasets. This paper proposes using a convolutional Gaussian
+neural process (ConvGNP) to address these issues. A ConvGNP uses neural
+networks to parameterise a joint Gaussian distribution at arbitrary target
+locations, enabling flexibility and scalability. Using simulated surface air
+temperature anomaly over Antarctica as training data, the ConvGNP learns
+spatial and seasonal non-stationarities, outperforming a non-stationary GP
+baseline. In a simulated sensor placement experiment, the ConvGNP better
+predicts the performance boost obtained from new observations than GP
+baselines, leading to more informative sensor placements. We contrast our
+approach with physics-based sensor placement methods and propose future steps
+towards an operational sensor placement recommendation system. Our work could
+help to realise environmental digital twins that actively direct measurement
+sampling to improve the digital representation of reality.
+",2022-11-18T17:25:14Z,http://arxiv.org/abs/2211.10381v5
+"DCSF: Deep Convolutional Set Functions for Classification of
+  Asynchronous Time Series","Vijaya Krishna Yalavarthi, Johannes Burchert, Lars Schmidt-Thieme",N/A,ArXiv,2022,N/A,N/A,2022-08-24T08:47:36Z,N/A,ArXiv,"  Asynchronous Time Series is a multivariate time series where all the channels
+are observed asynchronously-independently, making the time series extremely
+sparse when aligning them. We often observe this effect in applications with
+complex observation processes, such as health care, climate science, and
+astronomy, to name a few. Because of the asynchronous nature, they pose a
+significant challenge to deep learning architectures, which presume that the
+time series presented to them are regularly sampled, fully observed, and
+aligned with respect to time. This paper proposes a novel framework, that we
+call Deep Convolutional Set Functions (DCSF), which is highly scalable and
+memory efficient, for the asynchronous time series classification task. With
+the recent advancements in deep set learning architectures, we introduce a
+model that is invariant to the order in which time series' channels are
+presented to it. We explore convolutional neural networks, which are well
+researched for the closely related problem-classification of regularly sampled
+and fully observed time series, for encoding the set elements. We evaluate DCSF
+for AsTS classification, and online (per time point) AsTS classification. Our
+extensive experiments on multiple real-world and synthetic datasets verify that
+the suggested model performs substantially better than a range of
+state-of-the-art models in terms of accuracy and run time.
+",2022-08-24T08:47:36Z,http://arxiv.org/abs/2208.11374v1
+"Applications of Machine Learning to the Identification of Anomalous ER
+  Claims","Jesse B. Crawford, Nicholas Petela",N/A,ArXiv,2022,N/A,N/A,2022-06-16T11:19:04Z,N/A,ArXiv,"  Improper health insurance payments resulting from fraud and upcoding result
+in tens of billions of dollars in excess health care costs annually in the
+United States, motivating machine learning researchers to build anomaly
+detection models for health insurance claims. This article describes two such
+strategies specifically for ER claims. The first is an upcoding model based on
+severity code distributions, stratified by hierarchical diagnosis code
+clusters. A statistically significant difference in mean upcoding anomaly
+scores is observed between free-standing ERs and acute care hospitals, with
+free-standing ERs being more anomalous. The second model is a random forest
+that minimizes improper payments by optimally sorting ER claims within review
+queues. Depending on the percentage of claims reviewed, the random forest saved
+12% to 40% above a baseline approach that prioritized claims by billed amount.
+",2022-06-16T11:19:04Z,http://arxiv.org/abs/2206.08093v1
+"Cartographie de l'habitat de reproduction du tétras-lyre (Lyrurus
+  tetrix) dans les Alpes françaises","Alexandre Defossez, Samuel Alleaume, Marc Montadert, Dino Ienco, Sandra Luque",N/A,ArXiv,2024,N/A,N/A,2024-02-27T07:52:38Z,N/A,ArXiv,"  The Black Grouse (Lyrurus tetrix) is an emblematic alpine species with high
+conservation importance. The population size of these mountain bird tends to
+decline on the reference sites and shows differences according to changes in
+local landscape characteristics. Habitat changes are at the centre of the
+identified pressures impacting part or all of its life cycle, according to
+experts. Hence, an approach to monitor population dynamics, is trough modelling
+the favourable habitats of Black Grouse breeding (nesting sites). Then,
+coupling modelling with multi-source remote sensing data (medium and very high
+spatial resolution), allowed the implementation of a spatial distribution model
+of the species. Indeed, the extraction of variables from remote sensing helped
+to describe the area studied at appropriate spatial and temporal scales:
+horizontal and vertical structure (heterogeneity), functioning (vegetation
+indices), phenology (seasonal or inter-annual dynamics) and biodiversity. An
+annual time series of radiometric indices (NDVI, NDWI, BI {\ldots}) from
+Sentinel-2 has made it possible to generate Dynamic Habitat Indices (DHIs) to
+derive phenological indications on the nature and dynamics of natural habitats.
+In addition, very high resolution images (SPOT6) provided access to the fine
+structure of natural habitats, i.e. the vertical and horizontal organisation by
+states identified as elementary (mineral, herbaceous, low and high woody).
+Indeed, one of the essential limiting factors for brood rearing is the presence
+of a well-developed herbaceous or ericaceous stratum in the northern Alps and
+larch forests in the southern region. A deep learning model was used to
+classify elementary strata. Finally, Biomod2 R platform, using an ensemble
+approach, was applied to model, the favourable habitat of Black Grouse
+reproduction. Of all the models, Random Forest and Extreme Boosted Gradient are
+the best performing, with TSS and ROC scores close to 1. For the SDM, we
+selected only Random Forest models (ensemble modelling) because of their low
+susceptibility to overfitting and coherent predictions (after comparing model
+predictions).In this ensemble model, the most important explanatory variables
+are altitude, the proportion of heathland, and the DHI (NDVI Max and NDWI Max).
+Results from the habitat model can be used as an operational tool for
+monitoring forest landscape shifts and changes. In addition, to delimiting
+potential areas to protect the species habitat, which constitute a valuable
+decision-making tool for conservation management of mountain open forest.
+",2024-02-27T07:52:38Z,http://arxiv.org/abs/2402.18597v1
+HydroNets: Leveraging River Structure for Hydrologic Modeling,"Zach Moshe, Asher Metzger, Gal Elidan, Frederik Kratzert, Sella Nevo, Ran El-Yaniv",N/A,ArXiv,2020,N/A,N/A,2020-07-01T16:32:07Z,N/A,ArXiv,"  Accurate and scalable hydrologic models are essential building blocks of
+several important applications, from water resource management to timely flood
+warnings. However, as the climate changes, precipitation and rainfall-runoff
+pattern variations become more extreme, and accurate training data that can
+account for the resulting distributional shifts become more scarce. In this
+work we present a novel family of hydrologic models, called HydroNets, which
+leverages river network structure. HydroNets are deep neural network models
+designed to exploit both basin specific rainfall-runoff signals, and upstream
+network dynamics, which can lead to improved predictions at longer horizons.
+The injection of the river structure prior knowledge reduces sample complexity
+and allows for scalable and more accurate hydrologic modeling even with only a
+few years of data. We present an empirical study over two large basins in India
+that convincingly support the proposed model and its advantages.
+",2020-07-01T16:32:07Z,http://arxiv.org/abs/2007.00595v1
+"On the archetypal `flavours', indices and teleconnections of ENSO
+  revealed by global sea surface temperatures","Didier P. Monselesan, James S. Risbey, Benoit Legresy, Sophie Cravatte, Bastien Pagli, Takeshi Izumo, Christopher C. Chapman, Mandy Freund, Abdelwaheb Hannachi, Damien Irving, P. Jyoteeshkumar Reddy, Doug Richardson, Dougal T. Squire, Carly R. Tozer",N/A,ArXiv,2024,N/A,N/A,2024-06-12T23:34:23Z,N/A,ArXiv,"  El Ni\~no-Southern Oscillation global (ENSO) imprint on sea surface
+temperature comes in many guises. To identify its tropical fingerprints and
+impacts on the rest of the climate system, we propose a global approach based
+on archetypal analysis (AA), a pattern recognition method based on the
+identification of extreme configurations in the dataset under investigation.
+Relying on detrended sea surface temperature monthly anomalies over the 1982 to
+2022 period, the technique recovers central and eastern Pacific ENSO types
+identified by more traditional methods and allows one to hierarchically add
+extra flavours and nuances to both persistent and transient phases of the
+phenomenon. Archetypal patterns found compare favorably to phase identification
+from K-means, fuzzy C-means and recently published network-based
+machine-learning algorithms. The AA implementation is modified for the
+identification of ENSO phases in sub-seasonal-to-seasonal prediction systems
+and complements current alert systems in characterising the diversity of ENSO
+and its teleconnections. Tropical and extra-tropical teleconnection composites
+from various oceanic and atmospheric fields derived from the analysis are shown
+to be robust and physically relevant. Extending AA to sub-surface ocean fields
+improves the discrimination between phases when the characterisation of ENSO
+based on sea surface temperature is uncertain. We show that AA on detrended
+sea-level monthly anomalies provides a clearer expression of ENSO types.
+",2024-06-12T23:34:23Z,http://arxiv.org/abs/2406.08694v1
+"A Novel Algorithm for Optimized Real Time Anomaly Detection in
+  Timeseries",Krishnam Kapoor,N/A,ArXiv,2020,N/A,N/A,2020-06-07T07:41:33Z,N/A,ArXiv,"  Observations in data which are significantly different from its neighbouring
+points but cannot be classified as noise are known as anomalies or outliers.
+These anomalies are a cause of concern and a timely warning about their
+presence could be valuable. In this paper, we have evaluated and compared the
+performance of popular algorithms from domains of Machine Learning and
+Statistics in detecting anomalies on both offline data as well as real time
+data. Our aim is to come up with an algorithm which can handle all types of
+seasonal and non-seasonal data effectively and is fast enough to be of
+practical utility in real time. It is not only important to detect anomalies at
+the global but also the ones which are anomalies owing to their local
+surroundings. Such outliers can be termed as contextual anomalies as they
+derive their context from the neighbouring observations. Also, we require a
+methodology to automatically determine the presence of seasonality in the given
+data. For detecting the seasonality, the proposed algorithm takes up a curve
+fitting approach rather than model based anomaly detection. The proposed model
+also introduces a unique filter which assess the relative significance of local
+outliers and removes the ones deemed as insignificant. Since, the proposed
+model fits polynomial in buckets of timeseries data, it does not suffer from
+problems such as heteroskedasticity and breakout as compared to its statistical
+alternatives such as ARIMA, SARIMA and Winter Holt. Experimental results the
+proposed algorithm performs better on both real time as well as artificial
+generated datasets.
+",2020-06-07T07:41:33Z,http://arxiv.org/abs/2006.04071v1
+"Suicide disparities across urban and suburban areas in the U.S.: A
+  comparative assessment of socio-environmental factors using a data-driven
+  predictive approach","Sayanti Mukherjee, Zhiyuan Wei",N/A,ArXiv,2020,N/A,N/A,2020-11-16T18:56:31Z,N/A,ArXiv,"  Disparity in suicide rates between urban and suburban/rural areas is growing,
+with rural areas typically witnessing higher suicide rates in the U.S. However,
+previous studies often ignored the effect of socio-environmental factors on the
+suicide rates and its regional disparity. To address these gaps, we propose a
+holistic data-driven framework to model the associations of social
+(demographic, socioeconomic) and environmental (climate) factors on suicide
+rates, and study the disparities across urban and suburban areas. Leveraging
+the county-level suicide data from 2000--2017 along with the
+socio-environmental features, we trained, tested and validated a suite of
+advanced statistical learning algorithms to identify, assess and predict the
+influence of key socio-environmental factors on suicide rates. Random forest
+outperformed all other models in terms of goodness-of-fit and predictive
+accuracy, and selected as the final model to make inferences. Our results
+indicate that population demographics is significantly associated with both
+urban and suburban suicide rates. We found that suburban population is more
+vulnerable to suicides compared to urban communities, with suburban suicide
+rate being particularly sensitive to unemployment rate and median household
+income. Our analysis revealed that suicide mortality is correlated to climate,
+showing that urban suicide rate is more sensitive to higher temperatures,
+seasonal-heating-degree-days and precipitation, while suburban suicide rate is
+sensitive to only seasonal-cooling-degree-days. This work provides deeper
+insights on interactions between key socio-environmental factors and suicides
+across different urbanized areas, and can help the public health agencies
+develop suicide prevention strategies to reduce the growing risk of suicides.
+",2020-11-16T18:56:31Z,http://arxiv.org/abs/2011.08171v1
+"Machine learning approach to pattern recognition in nuclear dynamics
+  from the ab initio symmetry-adapted no-core shell model","O. M. Molchanov, K. D. Launey, A. Mercenne, G. H. Sargsyan, T. Dytrych, J. P. Draayer",N/A,ArXiv,2021,N/A,N/A,2021-07-03T21:26:27Z,N/A,ArXiv,"  A novel machine learning approach is used to provide further insight into
+atomic nuclei and to detect orderly patterns amidst a vast data of large-scale
+calculations. The method utilizes a neural network that is trained on ab initio
+results from the symmetry-adapted no-core shell model (SA-NCSM) for light
+nuclei. We show that the SA-NCSM, which expands ab initio applications up to
+medium-mass nuclei by using dominant symmetries of nuclear dynamics, can reach
+heavier nuclei when coupled with the machine learning approach. In particular,
+we find that a neural network trained on probability amplitudes for $s$-and
+$p$-shell nuclear wave functions not only predicts dominant configurations for
+heavier nuclei but in addition, when tested for the $^{20}$Ne ground state, it
+accurately reproduces the probability distribution. The nonnegligible
+configurations predicted by the network provide an important input to the
+SA-NCSM for reducing ultra-large model spaces to manageable sizes that can be,
+in turn, utilized in SA-NCSM calculations to obtain accurate observables. The
+neural network is capable of describing nuclear deformation and is used to
+track the shape evolution along the $^{20-42}$Mg isotopic chain, suggesting a
+shape-coexistence that is more pronounced toward the very neutron-rich
+isotopes. We provide first descriptions of the structure and deformation of
+$^{24}$Si and $^{40}$Mg of interest to x-ray burst nucleosynthesis, and even of
+the extremely heavy nuclei such as $^{166,168}$Er and $^{236}$U, that build
+upon first principles considerations.
+",2021-07-03T21:26:27Z,http://arxiv.org/abs/2107.01498v1
+Identifying Grey-box Thermal Models with Bayesian Neural Networks,"Md Monir Hossain, Tianyu Zhang, Omid Ardakanian",N/A,ArXiv,2020,N/A,N/A,2020-09-13T01:12:34Z,N/A,ArXiv,"  Smart thermostats are one of the most prevalent home automation products.
+They learn occupant preferences and schedules, and utilize an accurate thermal
+model to reduce the energy use of heating and cooling equipment while
+maintaining the temperature for maximum comfort. Despite the importance of
+having an accurate thermal model for the operation of smart thermostats, fast
+and reliable identification of this model is still an open problem. In this
+paper, we explore various techniques for establishing a suitable thermal model
+using time series data generated by smart thermostats. We show that Bayesian
+neural networks can be used to estimate parameters of a grey-box thermal model
+if sufficient training data is available, and this model outperforms several
+black-box models in terms of the temperature prediction accuracy. Leveraging
+real data from 8,884 homes equipped with smart thermostats, we discuss how the
+prior knowledge about the model parameters can be utilized to quickly build an
+accurate thermal model for another home with similar floor area and age in the
+same climate zone. Moreover, we investigate how to adapt the model originally
+built for the same home in another season using a small amount of data
+collected in this season. Our results confirm that maintaining only a small
+number of pre-trained thermal models will suffice to quickly build accurate
+thermal models for many other homes, and that 1~day smart thermostat data could
+significantly improve the accuracy of transferred models in another season.
+",2020-09-13T01:12:34Z,http://arxiv.org/abs/2009.05889v1
+"Thermodynamic behavior of binary mixtures of hard spheres:
+  Semianalytical solutions on a Husimi lattice built with cubes","Nathann T. Rodrigues, Tiago J. Oliveira",N/A,ArXiv,2019,N/A,N/A,2019-08-31T16:11:27Z,N/A,ArXiv,"  We study binary mixtures of hard particles, which exclude up to their $k$th
+nearest neighbors ($k$NN) on the simple cubic lattice and have activities
+$z_k$. In the first model analyzed, point particles (0NN) are mixed with 1NN
+ones. The grand-canonical solution of this model on a Husimi lattice built with
+cubes unveils a phase diagram with a fluid and a solid phase separated by a
+continuous and a discontinuous transition line which meet at a tricritical
+point. A density anomaly, characterized by minima in isobaric curves of the
+total density of particles against $z_0$ (or $z_1$), is also observed in this
+system. Overall, this scenario is identical to the one previously found for
+this model when defined on the square lattice. The second model investigated
+consists of the mixture of 1NN particles with 2NN ones. In this case, a very
+rich phase behavior is found in its Husimi lattice solution, with two solid
+phases - one associated with the ordering of 1NN particles ($S1$) and the other
+with the ordering of 2NN ones ($S2$) -, beyond the fluid ($F$) phase. While the
+transitions between $F$-$S2$ and $S1$-$S2$ phases are always discontinuous, the
+$F$-$S1$ transition is continuous (discontinuous) for small (large) $z_2$. The
+critical and coexistence $F$-$S1$ lines meet at a tricritical point. Moreover,
+the coexistence $F$-$S1$, $F$-$S2$ and $S1$-$S2$ lines meet at a triple point.
+Density anomalies are absent in this case.
+",2019-08-31T16:11:27Z,http://arxiv.org/abs/1909.00235v1
+"An Intelligent and Time-Efficient DDoS Identification Framework for
+  Real-Time Enterprise Networks SAD-F: Spark Based Anomaly Detection Framework","Awais Ahmed, Sufian Hameed, Muhammad Rafi, Qublai Khan Ali Mirza",N/A,ArXiv,2020,N/A,N/A,2020-01-21T06:05:48Z,N/A,ArXiv,"  Anomaly detection is a crucial step for preventing malicious activities in
+the network and keeping resources available all the time for legitimate users.
+It is noticed from various studies that classical anomaly detectors work well
+with small and sampled data, but the chances of failures increase with
+real-time (non-sampled data) traffic data. In this paper, we will be exploring
+security analytic techniques for DDoS anomaly detection using different machine
+learning techniques. In this paper, we are proposing a novel approach which
+deals with real traffic as input to the system. Further, we study and compare
+the performance factor of our proposed framework on three different testbeds
+including normal commodity hardware, low-end system, and high-end system.
+Hardware details of testbeds are discussed in the respective section. Further
+in this paper, we investigate the performance of the classifiers in (near)
+real-time detection of anomalies attacks. This study also focused on the
+feature selection process that is as important for the anomaly detection
+process as it is for general modeling problems. Several techniques have been
+studied for feature selection and it is observed that proper feature selection
+can increase performance in terms of model's execution time - which totally
+depends upon the traffic file or traffic capturing process.
+",2020-01-21T06:05:48Z,http://arxiv.org/abs/2001.08155v2
+"The Arctic Ocean seasonal cycles of heat and freshwater fluxes:
+  observation-based inverse estimates","Takamasa Tsubouchi, Sheldon Bacon, Yevgeny Aksenov, Alberto C. Naveira Garabato, Agnieszka Beszczynska-Möller, Edmond Hansen, Laura de Steur, Beth Curry, Craig M. Lee",N/A,ArXiv,2017,N/A,N/A,2017-11-29T14:38:48Z,N/A,ArXiv,"  This paper presents the first estimate of the seasonal cycle of ocean and sea
+ice net heat and freshwater (FW) fluxes around the boundary of the Arctic
+Ocean. The ocean transports are estimated primarily using 138 moored
+instruments deployed in September 2005 to August 2006 across the four main
+Arctic gateways: Davis, Fram and Bering Straits, and the Barents Sea Opening
+(BSO). Sea ice transports are estimated from a sea ice assimilation product.
+Monthly velocity fields are calculated with a box inverse model that enforces
+volume and salinity conservation. The resulting net ocean and sea ice heat and
+FW fluxes (annual mean $\pm$ 1 standard deviation) are 175 $\pm$48 TW and 204
+$\pm$85 mSv (respectively; 1 Sv = 10$^{6} m^{3} s^{-1}$). These boundary fluxes
+accurately represent the annual means of the relevant surface fluxes. Oceanic
+net heat transport variability is driven by temperature variability in upper
+part of the water column and by volume transport variability in the Atlantic
+Water layer. Oceanic net FW transport variability is dominated by Bering Strait
+velocity variability. The net water mass transformation in the Arctic entails a
+freshening and cooling of inflowing waters by 0.62$\pm$0.23 in salinity and
+3.74$\pm$0.76C in temperature, respectively, and a reduction in density by
+0.23$\pm$0.20 kg m$^{-3}$. The volume transport into the Arctic of waters
+associated with this water mass transformation is 11.3$\pm$1.2 Sv, and the
+export is -11.4$\pm$1.1 Sv. The boundary heat and FW fluxes provide a benchmark
+data set for the validation of numerical models and atmospheric re-analyses
+products.
+",2017-11-29T14:38:48Z,http://arxiv.org/abs/1711.10880v1
+Multivariate spatial conditional extremes for extreme ocean environments,"Rob Shooter, Emma Ross, Agustinus Ribal, Ian R. Young, Philip Jonathan",N/A,ArXiv,2022,N/A,N/A,2022-01-25T16:53:54Z,N/A,ArXiv,"  The joint extremal spatial dependence of wind speed and significant wave
+height in the North East Atlantic is quantified using Metop satellite
+scatterometer and hindcast observations for the period 2007-2018, and a
+multivariate spatial conditional extremes (MSCE) model, ultimately motivated by
+the work of Heffernan and Tawn (2004). The analysis involves (a) registering
+individual satellite swaths and corresponding hindcast data onto a template
+transect (running approximately north-east to south-west, between the British
+Isles and Iceland), (b) non-stationary directional-seasonal marginal extreme
+value analysis at a set of registration locations on the transect, (c)
+transformation from physical to standard Laplace scale using the fitted
+marginal model, (d) estimation of the MSCE model on the set of registration
+locations, and assessment of quality of model fit. A joint model is estimated
+for three spatial quantities: Metop wind speed, hindcast wind speed and
+hindcast significant wave height. Results suggest that, when conditioning on
+extreme Metop wind speed, extremal spatial dependence for all three quantities
+decays over approximately 600-800 km.
+",2022-01-25T16:53:54Z,http://arxiv.org/abs/2201.10451v1
+"Data-driven control of room temperature and bidirectional EV charging
+  using deep reinforcement learning: simulations and experiments","B. Svetozarevic, C. Baumann, S. Muntwiler, L. Di Natale, M. Zeilinger, P. Heer",N/A,ArXiv,2021,N/A,N/A,2021-03-02T17:31:57Z,N/A,ArXiv,"  This work presents a fully data-driven, black-box pipeline to obtain an
+optimal control policy for a multi-loop building control problem based on
+historical building and weather data, thus without the need for complex
+physics-based modelling. We demonstrate the method for joint control of room
+temperature and bidirectional EV charging to maximize the occupant thermal
+comfort and energy savings while leaving enough energy in the EV battery for
+the next trip. We modelled the room temperature with a recurrent neural network
+and EV charging with a piece-wise linear function. Using these models as a
+simulation environment, we applied a deep reinforcement learning (DRL)
+algorithm to obtain an optimal control policy. The learnt policy achieves on
+average 17% energy savings over the heating season and 19% better comfort
+satisfaction than a standard RB room temperature controller. When a
+bidirectional EV is additionally connected and a two-tariff electricity pricing
+is applied, the MIMO DRL policy successfully leverages the battery and
+decreases the overall cost of electricity compared to two standard RB
+controllers, one controlling the room temperature and another controlling the
+bidirectional EV (dis-)charging. Finally, we demonstrate a successful transfer
+of the learnt DRL policy from simulation onto a real building, the DFAB HOUSE
+at Empa Duebendorf in Switzerland, achieving up to 30% energy savings while
+maintaining similar comfort levels compared to a conventional RB room
+temperature controller over three weeks during the heating season.
+",2021-03-02T17:31:57Z,http://arxiv.org/abs/2103.01886v2
+"Investigation on domain adaptation of additive manufacturing monitoring
+  systems to enhance digital twin reusability","Jiarui Xie, Zhuo Yang, Chun-Chun Hu, Haw-Ching Yang, Yan Lu, Yaoyao Fiona Zhao",N/A,ArXiv,2024,N/A,N/A,2024-09-19T13:54:01Z,N/A,ArXiv,"  Powder bed fusion (PBF) is an emerging metal additive manufacturing (AM)
+technology that enables rapid fabrication of complex geometries. However,
+defects such as pores and balling may occur and lead to structural
+unconformities, thus compromising the mechanical performance of the part. This
+has become a critical challenge for quality assurance as the nature of some
+defects is stochastic during the process and invisible from the exterior. To
+address this issue, digital twin (DT) using machine learning (ML)-based
+modeling can be deployed for AM process monitoring and control. Melt pool is
+one of the most commonly observed physical phenomena for process monitoring,
+usually by high-speed cameras. Once labeled and preprocessed, the melt pool
+images are used to train ML-based models for DT applications such as process
+anomaly detection and print quality evaluation. Nonetheless, the reusability of
+DTs is restricted due to the wide variability of AM settings, including AM
+machines and monitoring instruments. The performance of the ML models trained
+using the dataset collected from one setting is usually compromised when
+applied to other settings. This paper proposes a knowledge transfer pipeline
+between different AM settings to enhance the reusability of AM DTs. The source
+and target datasets are collected from the National Institute of Standards and
+Technology and National Cheng Kung University with different cameras,
+materials, AM machines, and process parameters. The proposed pipeline consists
+of four steps: data preprocessing, data augmentation, domain alignment, and
+decision alignment. Compared with the model trained only using the source
+dataset, this pipeline increased the melt pool anomaly detection accuracy by
+31% without any labeled training data from the target dataset.
+",2024-09-19T13:54:01Z,http://arxiv.org/abs/2409.12785v2
+Untangling Climate's Complexity: Methodological Insights,"Alka Yadav, Sourish Das, Anirban Chakraborti",N/A,ArXiv,2024,N/A,N/A,2024-05-28T17:31:15Z,N/A,ArXiv,"  In this article, we review the interdisciplinary techniques (borrowed from
+physics, mathematics, statistics, machine-learning, etc.) and methodological
+framework that we have used to understand climate systems, which serve as
+examples of ""complex systems"". We believe that this would offer valuable
+insights to comprehend the complexity of climate variability and pave the way
+for drafting policies for action against climate change, etc. Our basic aim is
+to analyse time-series data structures across diverse climate parameters,
+extract Fourier-transformed features to recognize and model the
+trends/seasonalities in the climate variables using standard methods like
+detrended residual series analyses, correlation structures among climate
+parameters, Granger causal models, and other statistical machine-learning
+techniques. We cite and briefly explain two case studies: (i) the relationship
+between the Standardised Precipitation Index (SPI) and specific climate
+variables including Sea Surface Temperature (SST), El Ni\~no Southern
+Oscillation (ENSO), and Indian Ocean Dipole (IOD), uncovering temporal shifts
+in correlations between SPI and these variables, and reveal complex patterns
+that drive drought and wet climate conditions in South-West Australia; (ii) the
+complex interactions of North Atlantic Oscillation (NAO) index, with SST and
+sea ice extent (SIE), potentially arising from positive feedback loops.
+",2024-05-28T17:31:15Z,http://arxiv.org/abs/2405.18391v1
+Reconstructing Global Daily CO2 Emissions via Machine Learning,"Tao Li, Lixing Wang, Zihan Qiu, Philippe Ciais, Taochun Sun, Matthew W. Jones, Robbie M. Andrew, Glen P. Peters, Piyu ke, Xiaoting Huang, Robert B. Jackson, Zhu Liu",N/A,ArXiv,2024,N/A,N/A,2024-07-29T14:44:14Z,N/A,ArXiv,"  High temporal resolution CO2 emission data are crucial for understanding the
+drivers of emission changes, however, current emission dataset is only
+available on a yearly basis. Here, we extended a global daily CO2 emissions
+dataset backwards in time to 1970 using machine learning algorithm, which was
+trained to predict historical daily emissions on national scales based on
+relationships between daily emission variations and predictors established for
+the period since 2019. Variation in daily CO2 emissions far exceeded the
+smoothed seasonal variations. For example, the range of daily CO2 emissions
+equivalent to 31% of the year average daily emissions in China and 46% of that
+in India in 2022, respectively. We identified the critical emission-climate
+temperature (Tc) is 16.5 degree celsius for global average (18.7 degree celsius
+for China, 14.9 degree celsius for U.S., and 18.4 degree celsius for Japan), in
+which negative correlation observed between daily CO2 emission and ambient
+temperature below Tc and a positive correlation above it, demonstrating
+increased emissions associated with higher ambient temperature. The long-term
+time series spanning over fifty years of global daily CO2 emissions reveals an
+increasing trend in emissions due to extreme temperature events, driven by the
+rising frequency of these occurrences. This work suggests that, due to climate
+change, greater efforts may be needed to reduce CO2 emissions.
+",2024-07-29T14:44:14Z,http://arxiv.org/abs/2407.20057v1
