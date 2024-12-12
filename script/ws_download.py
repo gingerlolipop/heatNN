@@ -1,3 +1,4 @@
+# weather_downloader.py
 import requests
 import pandas as pd
 import datetime
@@ -7,6 +8,7 @@ import os
 from bs4 import BeautifulSoup
 import re
 import time
+import chardet
 
 class WeatherDataLoader:
     def __init__(self, base_url: str = "https://dd.weather.gc.ca/climate/observations/daily/csv/BC/",
@@ -42,6 +44,13 @@ class WeatherDataLoader:
         except Exception as e:
             print(f"Error listing files: {e}")
             return []
+
+    def detect_encoding(self, file_path: Path) -> str:
+        """Detect the encoding of a file using chardet."""
+        with open(file_path, 'rb') as file:
+            raw_data = file.read()
+            result = chardet.detect(raw_data)
+            return result['encoding']
     
     def download_file(self, filename: str, retry_count: int = 3) -> bool:
         """Download a specific file with retries."""
@@ -52,8 +61,10 @@ class WeatherDataLoader:
             try:
                 response = requests.get(url)
                 response.raise_for_status()
-                with open(local_path, 'wb') as f:
-                    f.write(response.content)
+                # Try to decode content first to check encoding
+                content = response.content.decode('latin-1')  # Using latin-1 for initial download
+                with open(local_path, 'w', encoding='latin-1') as f:
+                    f.write(content)
                 print(f"Successfully downloaded: {filename}")
                 return True
             except Exception as e:
@@ -85,6 +96,22 @@ class WeatherDataLoader:
             else:
                 print(f"File already exists: {filename}")
 
+    def read_csv_with_encoding(self, file_path: Path) -> Optional[pd.DataFrame]:
+        """Try to read CSV file with different encodings."""
+        encodings = ['latin-1', 'utf-8', 'utf-16', 'cp1252', 'iso-8859-1']
+        
+        for encoding in encodings:
+            try:
+                return pd.read_csv(file_path, encoding=encoding)
+            except UnicodeDecodeError:
+                continue
+            except Exception as e:
+                print(f"Error reading {file_path.name} with {encoding} encoding: {e}")
+                continue
+        
+        print(f"Failed to read {file_path.name} with any encoding")
+        return None
+
     def combine_downloaded_files(self) -> Optional[pd.DataFrame]:
         """Combine all downloaded CSV files into a single DataFrame."""
         print("Combining downloaded files...")
@@ -93,14 +120,22 @@ class WeatherDataLoader:
         csv_files = [f for f in os.listdir(self.data_dir) if f.endswith('.csv') and 'combined' not in f]
         total_files = len(csv_files)
         
+        if total_files == 0:
+            print("No CSV files found in the directory")
+            return None
+        
         for i, file in enumerate(csv_files, 1):
             try:
-                if i % 10 == 0:  # Progress update every 10 files
-                    print(f"Processing file {i}/{total_files}")
-                df = pd.read_csv(self.data_dir / file)
-                dfs.append(df)
+                file_path = self.data_dir / file
+                print(f"Processing file {i}/{total_files}: {file}")
+                
+                df = self.read_csv_with_encoding(file_path)
+                if df is not None:
+                    dfs.append(df)
+                    print(f"Successfully read {file}")
+                
             except Exception as e:
-                print(f"Error reading {file}: {e}")
+                print(f"Error processing {file}: {e}")
         
         if not dfs:
             print("No files were successfully processed")
@@ -112,7 +147,7 @@ class WeatherDataLoader:
         # Save combined dataset
         combined_path = self.data_dir / "combined_all_stations.csv"
         print(f"Saving combined dataset to: {combined_path}")
-        combined_df.to_csv(combined_path, index=False)
+        combined_df.to_csv(combined_path, index=False, encoding='utf-8')
         
         return combined_df
 
@@ -132,3 +167,5 @@ if __name__ == "__main__":
         print(f"\nSuccessfully combined data. Shape: {combined_data.shape}")
         print("\nColumns in the dataset:")
         print(combined_data.columns.tolist())
+        print("\nFirst few rows:")
+        print(combined_data.head())
