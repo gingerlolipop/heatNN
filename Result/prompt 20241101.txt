@@ -1,0 +1,17 @@
+I have an Excel file listing articles with links to their ArXiv pages. I want you to review their full text, and provide a synthesized table that checks if each article meets my screening criteria, specifically: 1) Published between 2014-2024, 2) relevance to these research questions:
+
+How effective are machine learning models in accurately forecasting heatwaves and other climate extremes?
+What factors influence their performance across different regions and climates?
+What training data and climate/weather features do the best models use?
+
+3) Written in English. 
+In the table, please include columns for:
+
+Title
+Authors
+Published Date
+Summary of Article
+Meets Screening Criteria (Yes/No)
+Reason of meeting or not meeting criteria (brief explanation of how it aligns)
+Link to Full Text
+If there is a limit on requests for full-text access, please retrieve as many as possible, and let me know when that limit is reached. Provide the results in a downloadable format.
